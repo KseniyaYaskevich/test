@@ -3433,11 +3433,10 @@ input[type=search]::-webkit-search-results-decoration {
 }
 .card .page-main {
   position: relative;
-  overflow: hidden;
 }
 .card .page-main::before {
   position: absolute;
-  top: -50%;
+  top: -53%;
   left: 50%;
   z-index: 0;
   -webkit-transform: translateX(-50%);
