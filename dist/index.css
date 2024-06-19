@@ -3535,9 +3535,6 @@ input[type=search]::-webkit-search-results-decoration {
   display: -ms-flexbox;
   display: flex;
   border-radius: 16px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#171717), to(#171717));
-  background: linear-gradient(0deg, #171717 0%, #171717 100%);
-  background-blend-mode: lighten;
 }
 
 .single-card__rarity {
@@ -3570,9 +3567,6 @@ input[type=search]::-webkit-search-results-decoration {
 
 .single-card__video {
   border-radius: 16px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#171717), to(#171717));
-  background: linear-gradient(0deg, #171717 0%, #171717 100%);
-  background-blend-mode: lighten;
 }
 @media (min-width: 768px) {
   .single-card__video {
