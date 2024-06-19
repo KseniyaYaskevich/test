@@ -1905,7 +1905,6 @@ a {
   z-index: 30;
 }
 .page-header .container {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2159,18 +2158,26 @@ a {
           filter: brightness(100%);
 }
 
+.dropdown {
+  position: relative;
+}
 .dropdown:hover .dropdown-menu, .dropdown:focus .dropdown-menu, .dropdown:focus-within .dropdown-menu {
   visibility: visible;
-  -webkit-transform: rotateX(0);
-          transform: rotateX(0);
+  -webkit-transform: rotateX(0) translateX(-60%);
+          transform: rotateX(0) translateX(-60%);
+}
+@media (min-width: 720px) {
+  .dropdown:hover .dropdown-menu, .dropdown:focus .dropdown-menu, .dropdown:focus-within .dropdown-menu {
+    -webkit-transform: rotateX(0) translateX(-50%);
+            transform: rotateX(0) translateX(-50%);
+  }
 }
 
 .dropdown-menu {
   position: absolute;
-  top: 70%;
-  right: 0;
+  top: 100%;
+  left: 60%;
   z-index: 150;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2189,15 +2196,22 @@ a {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   visibility: hidden;
-  -webkit-transform: rotateX(90deg);
-          transform: rotateX(90deg);
-  -webkit-transform-origin: 0 0;
-      -ms-transform-origin: 0 0;
-          transform-origin: 0 0;
+  -webkit-transform: rotateX(90deg) translateX(-60%);
+          transform: rotateX(90deg) translateX(-60%);
+  -webkit-transform-origin: top;
+      -ms-transform-origin: top;
+          transform-origin: top;
   -webkit-transition: visibility 0s ease-out, -webkit-transform 0.2s ease-out;
   transition: visibility 0s ease-out, -webkit-transform 0.2s ease-out;
   transition: transform 0.2s ease-out, visibility 0s ease-out;
   transition: transform 0.2s ease-out, visibility 0s ease-out, -webkit-transform 0.2s ease-out;
+}
+@media (min-width: 720px) {
+  .dropdown-menu {
+    left: 50%;
+    -webkit-transform: rotateX(90deg) translateX(-50%);
+            transform: rotateX(90deg) translateX(-50%);
+  }
 }
 
 .dropdown-item {
@@ -2228,15 +2242,17 @@ a {
   margin-right: -4px;
 }
 
-.page-footer__socials {
-  position: relative;
+.page-footer .dropdown:hover .dropdown-menu, .page-footer .dropdown:focus .dropdown-menu, .page-footer .dropdown:focus-within .dropdown-menu {
+  visibility: visible;
+  -webkit-transform: rotateX(0) translateX(-35%);
+          transform: rotateX(0) translateX(-35%);
 }
-
 .page-footer .dropdown-menu {
-  min-width: 343px;
-  bottom: 100%;
   top: auto;
-  right: -8.5%;
+  bottom: 100%;
+  left: 35%;
+  -webkit-transform: rotateX(90deg) translateX(-35%);
+          transform: rotateX(90deg) translateX(-35%);
   -webkit-transform-origin: bottom;
       -ms-transform-origin: bottom;
           transform-origin: bottom;
