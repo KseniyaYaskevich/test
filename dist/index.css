@@ -3433,6 +3433,7 @@ input[type=search]::-webkit-search-results-decoration {
 }
 .card .page-main {
   position: relative;
+  overflow: hidden;
 }
 .card .page-main::before {
   position: absolute;
