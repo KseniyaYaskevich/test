@@ -1904,8 +1904,8 @@ a {
 }
 .dropdown:hover .dropdown-menu, .dropdown:focus .dropdown-menu, .dropdown:focus-within .dropdown-menu {
   visibility: visible;
-  -webkit-transform: rotateX(0) translateX(-60%);
-          transform: rotateX(0) translateX(-60%);
+  -webkit-transform: rotateX(0) translateX(-48%);
+          transform: rotateX(0) translateX(-48%);
 }
 @media (min-width: 720px) {
   .dropdown:hover .dropdown-menu, .dropdown:focus .dropdown-menu, .dropdown:focus-within .dropdown-menu {
@@ -1917,7 +1917,7 @@ a {
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: 60%;
+  left: 48%;
   z-index: 150;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1937,8 +1937,8 @@ a {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
   visibility: hidden;
-  -webkit-transform: rotateX(90deg) translateX(-60%);
-          transform: rotateX(90deg) translateX(-60%);
+  -webkit-transform: rotateX(90deg) translateX(-48%);
+          transform: rotateX(90deg) translateX(-48%);
   -webkit-transform-origin: top;
       -ms-transform-origin: top;
           transform-origin: top;
@@ -2087,14 +2087,17 @@ a {
   stroke: #FFB932;
 }
 
-@media (min-width: 1440px) {
+.page-header__desktop-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2px;
+}
+@media (min-width: 400px) {
   .page-header__desktop-panel {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     gap: 16px;
   }
 }
@@ -2106,7 +2109,12 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 8px;
+  gap: 2px;
+}
+@media (min-width: 400px) {
+  .desktop-panel__list {
+    gap: 8px;
+  }
 }
 
 .desktop-panel__link {
@@ -3176,7 +3184,7 @@ input[type=search]::-webkit-search-results-decoration {
   -webkit-backdrop-filter: blur(20px);
           backdrop-filter: blur(20px);
 }
-.marketplace-card:hover .marketplace-card__img-wrapper::after {
+.marketplace-card:hover .marketplace-card__img-wrapper::before {
   opacity: 1;
 }
 @media (min-width: 1440px) {
@@ -3211,7 +3219,7 @@ input[type=search]::-webkit-search-results-decoration {
     height: 312px;
   }
 }
-.marketplace-card__img-wrapper::after {
+.marketplace-card__img-wrapper::before {
   position: absolute;
   top: 0;
   right: 0;
@@ -3223,13 +3231,13 @@ input[type=search]::-webkit-search-results-decoration {
   -webkit-transition: opacity 0.2s ease-out;
   transition: opacity 0.2s ease-out;
 }
-.marketplace-card__img-wrapper--uncommon::after {
+.marketplace-card__img-wrapper--uncommon::before {
   background: radial-gradient(70.71% 70.71% at 0% 0%, rgba(34, 255, 135, 0.6) 0%, rgba(34, 255, 135, 0) 100%);
 }
-.marketplace-card__img-wrapper--epic::after {
+.marketplace-card__img-wrapper--epic::before {
   background: radial-gradient(70.71% 70.71% at 0% 0%, #3C7EFF 0%, rgba(60, 126, 255, 0) 100%);
 }
-.marketplace-card__img-wrapper--rare::after {
+.marketplace-card__img-wrapper--rare::before {
   background: radial-gradient(70.71% 70.71% at 0% 0%, #FF94EE 0%, rgba(255, 148, 238, 0) 100%);
 }
 
@@ -3429,14 +3437,36 @@ input[type=search]::-webkit-search-results-decoration {
 }
 .card .page-main::before {
   position: absolute;
-  top: -170%;
-  left: 100%;
-  -webkit-transform: translateX(-100%);
-      -ms-transform: translateX(-100%);
-          transform: translateX(-100%);
+  top: -50%;
+  left: 50%;
+  z-index: 0;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   content: "";
-  width: 200%;
-  height: 200%;
+  width: 1950px;
+  height: 1699px;
+}
+@media (min-width: 768px) {
+  .card .page-main::before {
+    top: -30%;
+    width: 1436px;
+    height: 1251px;
+  }
+}
+@media (min-width: 1440px) {
+  .card .page-main::before {
+    top: -70%;
+    width: 1950px;
+    height: 1699px;
+  }
+}
+@media (min-width: 1920px) {
+  .card .page-main::before {
+    top: -60%;
+    width: 2126px;
+    height: 1853px;
+  }
 }
 .card--uncommon .single-card__rarity {
   color: #22FF87;
