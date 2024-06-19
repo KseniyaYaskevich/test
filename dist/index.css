@@ -3290,6 +3290,13 @@ input[type=search]::-webkit-search-results-decoration {
 }
 
 .marketplace-card__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 0 12px;
 }
 @media (min-width: 1440px) {
@@ -3337,12 +3344,6 @@ input[type=search]::-webkit-search-results-decoration {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 17px;
-}
-
-.marketplace-card__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .marketplace-notavailable {
