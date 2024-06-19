@@ -3307,7 +3307,10 @@ input[type=search]::-webkit-search-results-decoration {
     position: absolute;
     z-index: -1;
     top: 25%;
-    left: -30%;
+    left: 40%;
+    -webkit-transform: translateX(-40%);
+        -ms-transform: translateX(-40%);
+            transform: translateX(-40%);
     content: "";
     width: 514px;
     height: 442px;
@@ -3426,8 +3429,10 @@ input[type=search]::-webkit-search-results-decoration {
 .card .page-main::before {
   position: absolute;
   top: -170%;
-  left: -100%;
-  margin-left: 50%;
+  left: 100%;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
   content: "";
   width: 200%;
   height: 200%;
