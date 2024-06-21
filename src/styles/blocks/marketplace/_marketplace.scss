@@ -1,9 +1,20 @@
+.page-marketplace {
+  .marketplace-card {
+    video {
+      @media (width >=$middle-width) and (width <$desktop-width) {
+        max-width: 260px;
+        height: auto;
+      }
+    }
+  }
+}
+
 .marketplace {
   position: relative;
   z-index: 20;
   padding-top: 80px;
   margin-bottom: 120px;
- 
+
   @media (width >=$desktop-width) {
     padding-top: 100px;
     margin-bottom: 125px;
@@ -21,15 +32,19 @@
 }
 
 .marketplace__title {
-  @media (width >=$desktop-width) {
+  @media (width >=$middle-width) {
     margin-bottom: 10px;
     padding-left: 250px;
   }
 }
 
 .marketplace__wrapper {
-  @media (width >=$desktop-width) {
+  @media (width >=$middle-width) {
     display: flex;
+    gap: 10px;
+  }
+
+  @media (width >=$desktop-width) {
     gap: 32px;
   }
 }
@@ -38,7 +53,6 @@
   @media (width >=$desktop-width) {
     min-width: 1040px;
   }
-
 }
 
 .marketplace__cards {

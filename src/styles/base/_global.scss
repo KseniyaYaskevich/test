@@ -103,7 +103,7 @@ a {
     margin: 0 24px;
   }
 
-  @media (width >=1440px) {
+  @media (width >=$desktop-width) {
     max-width: 1380px;
     margin: 0 auto;
   }

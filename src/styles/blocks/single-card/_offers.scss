@@ -17,7 +17,7 @@
       padding-left: 110px;
     }
 
-    @media (width >=1920px) {
+    @media (width >=$large-width) {
       padding-left: 157px;
       max-width: 1872px;
       gap: 164px;
@@ -76,7 +76,7 @@
     }
   }
 
-  @media(width>=1920px) {
+  @media(width>=$large-width) {
     .marketplace-card {
       min-width: 456px;
     }

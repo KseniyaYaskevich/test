@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  @media (width >=$desktop-width) {
+  @media (width >=$middle-width) {
     position: sticky;
     position: -webkit-sticky;
     top: 20px;
@@ -10,6 +10,27 @@
     min-width: 224px;
 
     gap: 21px;
+  }
+}
+
+.marketplace-filter__title {
+  display: none;
+
+  @media (width >=$middle-width) {
+    display: block;
+  }
+}
+
+.marketplace-filter__dotted-line {
+  margin-bottom: 8px;
+  margin-top: 8px;
+
+  &--hide {
+    display: none;
+
+    @media (width >=$middle-width) {
+      display: block;
+    }
   }
 }
 
@@ -23,7 +44,7 @@
   margin-bottom: 13px;
   overflow-x: auto;
 
-  @media (width >=$desktop-width) {
+  @media (width >=$middle-width) {
     flex-direction: column;
     gap: 8px;
     margin: 0;
@@ -79,7 +100,7 @@
     background: #000;
   }
 
-  @media (width >=$desktop-width) {
+  @media (width >=$middle-width) {
     display: flex;
   }
 }
@@ -94,7 +115,7 @@
   &--hide-desktop {
     display: none;
 
-    @media (width >=$desktop-width) {
+    @media (width >=$middle-width) {
       display: flex;
     }
   }
@@ -234,7 +255,6 @@
   transition: transform .2s ease-out;
 
   &.active {
-   
     transform: rotateX(0);
   }
 }
@@ -272,11 +292,6 @@
 
   border-radius: 8px;
   background: #606060;
-}
-
-.marketplace-filter__dotted-line {
-  margin-bottom: 8px;
-  margin-top: 8px;
 }
 
 .marketplace-filter__mobile-content {

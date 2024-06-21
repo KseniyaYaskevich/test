@@ -21,6 +21,14 @@
   }
 }
 
+.marketplace-sort__button {
+  display: flex;
+
+  @media (width >=$middle-width) {
+    display: none;
+  }
+}
+
 .marketplace-sort__search {
   width: 70%;
 
@@ -78,8 +86,6 @@
   transition: width .3s ease-out, padding .3s ease-out;
 
   &.active {
-
-
     &~.marketplace-sort__search-button--clear {
       opacity: 1;
       right: 0;
@@ -93,13 +99,13 @@
       backdrop-filter: blur(20px);
     }
 
-    @media (width >=$desktop-width) {
+    @media (width >=$middle-width) {
       width: 300px;
       padding-right: 40px;
     }
   }
 
-  @media (width >=$desktop-width) {
+  @media (width >=$middle-width) {
     width: 60%;
     padding-left: 40px;
     padding-right: 0;
