@@ -54,10 +54,12 @@ var search = function search() {
 };
 ;// CONCATENATED MODULE: ./src/scripts/modules/hoverVideo.js
 var hoverVideo = function hoverVideo() {
-  var cards = document.querySelector('.marketplace__cards');
   var singleCard = document.querySelector('.single-card__video');
+  var cards = document.querySelector('.marketplace__cards');
   var currentElem = null;
   if (singleCard) {
+    singleCard.pause();
+    singleCard.currentTime = 0;
     singleCard.addEventListener('mouseover', function () {
       singleCard.play();
     });
@@ -72,6 +74,11 @@ var hoverVideo = function hoverVideo() {
     });
   }
   if (cards) {
+    var videos = document.querySelectorAll('.marketplace__cards video');
+    videos.forEach(function (video) {
+      video.pause();
+      video.currentTime = 0;
+    });
     cards.addEventListener('mouseover', function (evt) {
       var target = evt.target.closest('.marketplace-card');
       if (currentElem === target) return;

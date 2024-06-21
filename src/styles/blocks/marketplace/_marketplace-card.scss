@@ -1,0 +1,178 @@
+.marketplace-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 12px 12px 24px;
+  border-radius: 24px;
+  background: $color-grey--dark-50;
+  backdrop-filter: blur(20px);
+
+  &:hover {
+    .marketplace-card__img-wrapper {
+      &::before {
+        opacity: 1;
+      }
+    }
+
+    @media (width >=$desktop-width) {
+      .marketplace-card__content {
+        transform: translateY(-69px);
+
+        &::after {
+          background: radial-gradient(50% 50% at 50% 50%, #FFD232 0%, rgba(255, 210, 50, 0) 100%);
+        }
+      }
+    }
+  }
+
+  @media (width >=$desktop-width) {
+    overflow: hidden;
+    gap: 6px;
+  }
+}
+
+.marketplace-card__img-wrapper {
+  position: relative;
+  display: flex;
+
+  video {
+    border-radius: 14px;
+
+    @media (width >=$desktop-width) {
+      width: 312px;
+      height: 312px;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    content: "";
+
+    border-radius: 14px;
+    opacity: 0.4;
+    transition: opacity .2s ease-out;
+  }
+
+  &--uncommon {
+    &::before {
+      background: radial-gradient(70.71% 70.71% at 0% 0%, rgba(34, 255, 135, 0.60) 0%, rgba(34, 255, 135, 0.00) 100%);
+    }
+  }
+
+  &--epic {
+    &::before {
+      background: radial-gradient(70.71% 70.71% at 0% 0%, #3C7EFF 0%, rgba(60, 126, 255, 0.00) 100%);
+    }
+  }
+
+  &--rare {
+    &::before {
+      background: radial-gradient(70.71% 70.71% at 0% 0%, #FF94EE 0%, rgba(255, 148, 238, 0.00) 100%);
+    }
+  }
+}
+
+.marketplace-card__rarity {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 8px 16px;
+
+  text-align: center;
+  font-variant-numeric: ordinal;
+  font-feature-settings: 'ss01' on, 'salt' on, 'ss08' on, 'ss06' on, 'ss03' on, 'ss05' on, 'ss04' on, 'ss09' on, 'clig' off, 'liga' off;
+
+  font-family: $font-family--petch;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+
+  text-transform: uppercase;
+
+
+  backdrop-filter: blur(20px);
+
+  @media (width >=$desktop-width) {
+    top: 12px;
+    left: 12px;
+  }
+
+  &--uncommon {
+    border-radius: 16px;
+    color: #22FF87;
+    background: linear-gradient(90deg, rgba(34, 255, 135, 0.20) 0%, rgba(87, 206, 213, 0.20) 100%);
+  }
+
+  &--epic {
+    color: #77D6FF;
+    background: linear-gradient(90deg, rgba(32, 67, 255, 0.40) 0%, rgba(60, 126, 255, 0.40) 100%);
+    border-radius: 20px;
+  }
+
+  &--rare {
+    color: #FF94EE;
+    border-radius: 16px;
+    background: linear-gradient(90deg, rgba(221, 85, 255, 0.40) 0%, rgba(255, 34, 220, 0.40) 100%);
+  }
+
+  &.marketplace-card__rarity-mobile {
+    display: none;
+
+    @media(width< 768px) {
+      position: relative;
+      top: 0;
+      left: 0;
+
+      padding: 4px 8px;
+      margin-bottom: 13px;
+      font-size: 12px;
+    }
+  }
+}
+
+.marketplace-card__content {
+  padding: 0 12px;
+
+  @media (width >=$desktop-width) {
+    margin-bottom: -69px;
+
+    transform: translateY(0);
+    transition: transform .2s ease-out;
+
+    &::after {
+      position: absolute;
+      z-index: -1;
+      top: 25%;
+      left: 40%;
+      transform: translateX(-40%);
+      content: "";
+      width: 514px;
+      height: 442px;
+      border-radius: 514px;
+      background: transparent;
+      transition: background 1s ease-out;
+    }
+  }
+}
+
+.marketplace-card__title {
+  margin-bottom: 16px;
+  color: $color-yellow;
+}
+
+.marketplace-card__sold-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.marketplace-card__button {
+  display: flex;
+}

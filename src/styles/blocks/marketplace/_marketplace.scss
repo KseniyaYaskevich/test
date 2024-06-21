@@ -1,0 +1,54 @@
+.marketplace {
+  position: relative;
+  z-index: 20;
+  padding-top: 80px;
+  margin-bottom: 120px;
+ 
+  @media (width >=$desktop-width) {
+    padding-top: 100px;
+    margin-bottom: 125px;
+  }
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (width >=$desktop-width) {
+      padding-left: 90px;
+    }
+  }
+}
+
+.marketplace__title {
+  @media (width >=$desktop-width) {
+    margin-bottom: 10px;
+    padding-left: 250px;
+  }
+}
+
+.marketplace__wrapper {
+  @media (width >=$desktop-width) {
+    display: flex;
+    gap: 32px;
+  }
+}
+
+.marketplace__inner {
+  @media (width >=$desktop-width) {
+    min-width: 1040px;
+  }
+
+}
+
+.marketplace__cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  &.hide {
+    display: none;
+  }
+}

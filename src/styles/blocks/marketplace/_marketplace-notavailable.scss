@@ -1,0 +1,73 @@
+.marketplace-notavailable {
+  position: relative;
+
+  margin-bottom: 60px;
+  text-align: center;
+
+  & .marketplace-card {
+    display: none;
+    min-width: 336px;
+    min-height: 460px;
+
+    &:first-child {
+      display: block;
+    }
+
+    @media (width >=$tablet-width) {
+      &:nth-child(2) {
+        display: block;
+      }
+    }
+    @media (width >=1150px) {
+      &:nth-child(3) {
+        display: block;
+      }
+    }
+
+    @media (width >=$desktop-width) {
+
+      display: block;
+
+    }
+  }
+
+  &.hide {
+    display: none;
+  }
+}
+
+.marketplace-notavailable__heading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  padding-top: 140px;
+}
+
+.marketplace-notavailable__title {
+
+  margin-bottom: 32px;
+  color: rgb(96 96 96 / 1);
+
+  @media (width >=$desktop-width) {
+    font-size: 96px;
+    margin-bottom: 39px;
+  }
+}
+
+.marketplace-notavailable__cards {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  @media (width >=$desktop-width) {
+    margin-bottom: -400px;
+  }
+
+  &.hide {
+    display: none;
+  }
+}

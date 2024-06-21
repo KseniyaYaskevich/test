@@ -1,0 +1,291 @@
+.marketplace-filter {
+  display: flex;
+  flex-direction: column;
+
+  @media (width >=$desktop-width) {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 20px;
+    height: 100%;
+    min-width: 224px;
+
+    gap: 21px;
+  }
+}
+
+.marketplace-filter__buttons {
+  display: flex;
+  gap: 4px;
+
+  padding-right: 16px;
+  padding-bottom: 5px;
+  margin-right: -16px;
+  margin-bottom: 13px;
+  overflow-x: auto;
+
+  @media (width >=$desktop-width) {
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.marketplace-filter__count {
+  display: flex;
+  padding: 4px 6px;
+  justify-content: center;
+  align-items: center;
+
+  color: $color-white;
+  font-variant-numeric: ordinal;
+  font-feature-settings: 'ss01' on, 'salt' on, 'ss08' on, 'ss06' on, 'ss03' on, 'ss05' on, 'ss04' on, 'ss09' on, 'clig' off, 'liga' off;
+  font-family: $font-family--petch;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  border-radius: 16px;
+  background: $color-grey--dark-50;
+}
+
+.marketplace-filter__select {
+  display: none;
+  padding: 8px 16px;
+  justify-content: space-between;
+  align-items: center;
+
+  color: $color-white;
+  font-variant-numeric: ordinal;
+  font-feature-settings: 'ss01' on, 'salt' on, 'ss08' on, 'ss06' on, 'ss03' on, 'ss05' on, 'ss04' on, 'ss09' on, 'clig' off, 'liga' off;
+
+  font-family: $font-family--petch;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  border-radius: 14px;
+  border: 1px solid #FFD232;
+
+  background: $color-grey--dark;
+  box-shadow: 0px 0px 32px 0px rgba(255, 210, 50, 0.50) inset;
+  backdrop-filter: blur(20px);
+
+  cursor: pointer;
+
+  &:hover {
+    background: #000;
+  }
+
+  @media (width >=$desktop-width) {
+    display: flex;
+  }
+}
+
+
+.marketplace-filter__checkbox-control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  &--hide-desktop {
+    display: none;
+
+    @media (width >=$desktop-width) {
+      display: flex;
+    }
+  }
+
+}
+
+.marketplace-filter__checkbox-label {
+  color: $color-grey--light;
+
+  display: flex;
+  width: 100%;
+  height: 40px;
+  padding: 0px 8px 0px 16px;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 20px;
+  background: $color-grey--dark;
+  backdrop-filter: blur(15px);
+
+  cursor: pointer;
+
+  &:hover {
+    color: $color-yellow;
+
+    .marketplace-filter__checkbox-custom {
+      border: 1px solid $color-yellow;
+    }
+
+    .paragraph {
+      color: $color-yellow;
+    }
+  }
+
+  .paragraph {
+    transition: color .2s ease-out;
+  }
+}
+
+.marketplace-filter__checkbox {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  &:checked {
+
+    &~.marketplace-filter__checkbox-custom {
+      border: 1px solid $color-yellow;
+
+      &::before {
+        display: block;
+
+      }
+    }
+
+    &~.paragraph {
+      color: $color-yellow;
+      ;
+    }
+  }
+}
+
+.marketplace-filter__checkbox-custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-width: 16px;
+  min-height: 16px;
+
+  margin-right: 8px;
+
+  border: 1px solid $color-grey--light;
+  border-radius: 4px;
+
+  transition: border .2s ease-out;
+
+  &::before {
+    content: "";
+
+    display: none;
+    width: 10px;
+    height: 8px;
+
+    background-image: url('~images/marketplace/cheked.svg');
+    background-repeat: no-repeat;
+  }
+}
+
+.marketplace-filter__checkbox-text {
+  font-size: 14px;
+}
+
+.marketplace-filter__checkbox-count {
+  display: flex;
+  padding: 4px 6px;
+  margin-left: auto;
+
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 16px;
+  background: $color-grey;
+
+  color: $color-white;
+  font-variant-numeric: ordinal;
+  font-feature-settings: 'ss01' on, 'salt' on, 'ss08' on, 'ss06' on, 'ss03' on, 'ss05' on, 'ss04' on, 'ss09' on, 'clig' off, 'liga' off;
+  font-family: $font-family--petch;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+// marketplace-filter__mobile
+
+.marketplace-filter__mobile {
+  position: fixed;
+  bottom: 0;
+  z-index: 150;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+
+  padding: 12px 16px 40px;
+
+  border-radius: 20px 20px 0px 0px;
+  background: $color-grey--dark-75;
+  backdrop-filter: blur(20px);
+
+  transform: rotateX(90deg);
+  transform-origin: bottom;
+  transition: transform .2s ease-out;
+
+  &.active {
+   
+    transform: rotateX(0);
+  }
+}
+
+.marketplace-filter__mobile-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.marketplace-filter__mobile-buttons {
+  display: flex;
+  gap: 4px;
+}
+
+.marketplace-filter__mobile {
+  &-reset {
+    color: $color-yellow;
+    text-align: center;
+    font-variant-numeric: ordinal;
+    font-feature-settings: 'ss01' on, 'salt' on, 'ss08' on, 'ss06' on, 'ss03' on, 'ss05' on, 'ss04' on, 'ss09' on, 'clig' off, 'liga' off;
+
+    font-family: $font-family--petch;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+.marketplace-filter__line {
+  width: 60px;
+  height: 3px;
+
+  border-radius: 8px;
+  background: #606060;
+}
+
+.marketplace-filter__dotted-line {
+  margin-bottom: 8px;
+  margin-top: 8px;
+}
+
+.marketplace-filter__mobile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+
+  p {
+    color: $color-yellow;
+  }
+}

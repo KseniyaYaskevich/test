@@ -1,0 +1,18 @@
+.progress {
+  margin-bottom: 14px;
+
+  transform: skewX(-26deg);
+  --bs-progress-border-radius: 3px;
+  background: rgba(255, 185, 50, .2);
+  overflow: visible;
+
+  @media (width >=$desktop-width) {
+    margin-bottom: 8px;
+  }
+}
+
+.progress-bar {
+  border-radius: 3px;
+  background: linear-gradient(180deg, #FFB900 16.67%, #FF9000 92.36%);
+  filter: drop-shadow(0px 0px 5px #FFD232);
+}

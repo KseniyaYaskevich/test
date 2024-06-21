@@ -1,0 +1,156 @@
+.marketplace-sort {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+
+  @media (width >=$desktop-width) {
+    padding: 10px 0;
+  }
+}
+
+.marketplace-sort__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  width: 50%;
+
+  @media (width >=500px) {
+    width: auto;
+  }
+}
+
+.marketplace-sort__search {
+  width: 70%;
+
+  @media (width >=500px) {
+    width: auto;
+  }
+}
+
+.marketplace-sort__search-control {
+  position: relative;
+
+  display: inline-flex;
+}
+
+.marketplace-sort__search-button {
+  position: absolute;
+  z-index: 5;
+
+  &--clear {
+    opacity: 0;
+    padding: 6px;
+    transition: right .3s ease-in-out, opacity .3s ease-in-out;
+
+    @media (width <$desktop-width) {
+      right: 70%;
+    }
+
+    @media (width >=$desktop-width) {
+      right: 30%;
+    }
+  }
+}
+
+
+.marketplace-sort__input {
+  width: 32px;
+
+  padding: 7px 16px;
+
+  color: $color-grey--light;
+  text-align: left;
+  font-variant-numeric: ordinal;
+  font-feature-settings: 'ss01' on, 'salt' on, 'ss08' on, 'ss06' on, 'ss03' on, 'ss05' on, 'ss04' on, 'ss09' on, 'clig' off, 'liga' off;
+
+  font-family: $font-family--petch;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  border-radius: 10px;
+  background: transparent;
+  border: none;
+
+  transition: width .3s ease-out, padding .3s ease-out;
+
+  &.active {
+
+
+    &~.marketplace-sort__search-button--clear {
+      opacity: 1;
+      right: 0;
+    }
+
+    @media (width <$desktop-width) {
+      width: 100%;
+      padding-left: 30px;
+      padding-right: 25px;
+      background: $color-grey--dark-50;
+      backdrop-filter: blur(20px);
+    }
+
+    @media (width >=$desktop-width) {
+      width: 300px;
+      padding-right: 40px;
+    }
+  }
+
+  @media (width >=$desktop-width) {
+    width: 60%;
+    padding-left: 40px;
+    padding-right: 0;
+    background: $color-grey--dark-50;
+    backdrop-filter: blur(20px);
+  }
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+.marketplace-sort__select-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.marketplace-sort__select-label {
+  color: $color-white;
+
+  text-align: right;
+  font-variant-numeric: ordinal;
+  font-feature-settings: 'ss01' on, 'salt' on, 'ss08' on, 'ss06' on, 'ss03' on, 'ss05' on, 'ss04' on, 'ss09' on, 'clig' off, 'liga' off;
+
+  font-family: $font-family--petch;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.marketplace-sort__select {
+  color: $color-yellow;
+  font-variant-numeric: ordinal;
+  font-feature-settings: 'ss01' on, 'salt' on, 'ss08' on, 'ss06' on, 'ss03' on, 'ss05' on, 'ss04' on, 'ss09' on, 'clig' off, 'liga' off;
+
+  font-family: $font-family--petch;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  background: transparent;
+  border: none;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  background: url('~images/marketplace/up-down.svg') no-repeat;
+  background-position: center right;
+}
