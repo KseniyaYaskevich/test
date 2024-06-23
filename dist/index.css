@@ -4558,9 +4558,6 @@ input[type=search]::-webkit-search-results-decoration {
 .card {
   background: #1F1F1F;
 }
-.card .page-header {
-  z-index: 10000 !important;
-}
 .card .main-nav {
   z-index: 10000 !important;
 }
