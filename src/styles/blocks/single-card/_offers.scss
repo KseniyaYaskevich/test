@@ -28,8 +28,14 @@
     .marketplace-card {
       padding: 0;
       padding-bottom: 8px;
-      max-width: 167px;
+      // max-width: 167px;
       gap: 10px;
+      width: 100%;
+
+      video {
+        width: 100%;
+        height: auto;
+      }
     }
 
     .marketplace-card__content {

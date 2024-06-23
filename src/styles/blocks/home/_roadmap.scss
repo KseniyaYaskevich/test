@@ -1,0 +1,171 @@
+.roadmap {
+  margin-bottom: 120px;
+
+  @media (width >=$tablet-width) {
+    margin-bottom: 170px;
+
+  }
+
+  & .container {
+    position: relative;
+    padding: 40px 24px;
+    border-radius: 24px;
+    fill: var(--dark-grey-50, rgba(23, 23, 23, 0.50));
+    backdrop-filter: blur(20px);
+    overflow: hidden;
+
+    &::before {
+      position: absolute;
+      top: -40%;
+      left: -20%;
+      z-index: 0;
+
+      content: "";
+      width: 228px;
+      height: 949px;
+
+      border-radius: 949px;
+      opacity: 0.8;
+      background: radial-gradient(50% 50% at 50% 50%, #FFD232 0%, rgba(255, 210, 50, 0.00) 100%);
+
+      filter: blur(100px);
+
+      @media (width >=$tablet-width) {
+        width: 769px;
+        height: 769px;
+        border-radius: 769px;
+
+        top: 50%;
+        left: -45%;
+        transform: translate(0, -50%);
+      }
+    }
+
+    @media (width >=$tablet-width) {
+      padding: 55px 120px 60px;
+    }
+  }
+}
+
+.roadmap__title {
+  margin-bottom: 38px;
+  text-align: center;
+
+  @media (width >=$tablet-width) {
+    margin-bottom: 48px;
+  }
+}
+
+.roadmap__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+
+  @media (width >=$tablet-width) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 13px;
+  }
+}
+
+.roadmap__card {
+  position: relative;
+  padding-left: 48px;
+
+  @media (width >=$tablet-width) {
+    padding: 0;
+
+    &:first-child {
+      width: calc(38% - 9px);
+    }
+
+    &:nth-child(2) {
+      width: calc(38% - 9px);
+    }
+
+    &:last-child {
+      width: calc(24% - 9px);
+
+      .roadmap__subtitle {
+        &::after {
+          width: 92%;
+        }
+      }
+    }
+  }
+}
+
+.roadmap__subtitle {
+  margin-bottom: 16px;
+  font-size: 18px;
+  line-height: normal;
+
+  @media (width >=$tablet-width) {
+    position: relative;
+    padding-bottom: 38px;
+    font-size: 24px;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    content: "";
+    width: 24px;
+    height: 24px;
+
+    background: url("~images/home/sun.svg") no-repeat center center;
+
+    @media (width >=$tablet-width) {
+      top: auto;
+      bottom: 0;
+      left: -10px;
+    }
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+
+    content: "";
+    width: 8px;
+    height: 87%;
+    border-radius: 10px;
+    background: rgba(255, 185, 50, .2);
+
+    @media (width >=$tablet-width) {
+      right: 0;
+      bottom: 8px;
+      left: auto;
+      width: 95%;
+      height: 8px;
+    }
+  }
+
+  &--done {
+    &::before {
+      background: url("~images/home/sun-colored.svg") no-repeat center center;
+    }
+
+    &::after {
+      background: linear-gradient(180deg, #FFB900 16.67%, #FF9000 92.36%);
+      filter: drop-shadow(0px 0px 5px #FFD232);
+      opacity: 1;
+    }
+  }
+}
+
+.roadmap__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 32px;
+  list-style-type: disc;
+  list-style-position: inside;
+
+  li::marker {
+    margin-right: 10px;
+  }
+}

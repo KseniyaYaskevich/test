@@ -2,7 +2,6 @@ const path = require('path');
 // const RemoveEmptyScriptsPlugin = require('webpack-remove-empty-scripts');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const ImageMinimizerPlugin = require('image-minimizer-webpack-plugin');
-const autoprefixer = require('autoprefixer');
 
 const isProduction = process.env.NODE_ENV === 'production';
 
@@ -18,6 +17,7 @@ const jsLoaders = () => [
 const config = {
   entry: {
     index: ['./src/scripts/index.js', './src/styles/styles.scss'],
+    home: ['./src/scripts/home.js'],
     // bootstrap: ['./src/styles/bootstrap/bootstrap.scss'],
   },
   output: {
@@ -37,6 +37,7 @@ const config = {
     extensions: ['.js'],
     alias: {
       images: path.resolve(__dirname, './src/assets/images'),
+      videos: path.resolve(__dirname, './src/assets/videos'),
       fonts: path.resolve(__dirname, './src/assets/fonts'),
     },
   },
@@ -128,9 +129,6 @@ const config = {
               postcssOptions: {
                 plugins: [
                   ['postcss-preset-env', {}],
-                  // autoprefixer({
-                  //   browsers: ['ie >= 8', 'last 4 version'],
-                  // }),
                 ],
               },
             },

@@ -1,0 +1,48 @@
+.carousels {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+  max-width: 2000px;
+
+  margin: 0 auto;
+  margin-bottom: 120px;
+
+  .marketplace-card {
+    width: 220px;
+
+    @media(width> 587px) {
+      width: 330px;
+    }
+  }
+
+  .owl-carousel .owl-stage {
+    display: flex;
+  }
+
+  .owl-carousel .owl-item {
+    width: auto;
+    height: 100%;
+  }
+
+  & .marketplace-card {
+    gap: 12px;
+    padding: 12px 12px 20px;
+  }
+
+  video {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+.carousels__title {
+  text-align: center;
+}
+
+.carousels__button {
+  align-self: center;
+  font-size: 14px;
+  padding: 16px 40px;
+}

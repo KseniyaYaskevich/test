@@ -1,0 +1,258 @@
+.party-token {
+  margin-bottom: 80px;
+
+  & .container {
+    text-align: center;
+  }
+
+  @media (width >=$tablet-width) {
+    margin-bottom: 222px;
+  }
+}
+
+.party-token__wrapper {
+  position: relative;
+  padding: 45px 8px 40px;
+  fill: rgba(23, 23, 23, 0.50);
+  margin-bottom: 32px;
+  backdrop-filter: blur(20px);
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  &::after {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 50%;
+
+    content: "";
+    width: 270px;
+    height: 270px;
+
+    transform: translate(-50%, 62%);
+    border-radius: 270px;
+    opacity: 0.8;
+    background: radial-gradient(50% 50% at 50% 50%, #FFD232 0%, rgba(255, 210, 50, 0.00) 100%);
+
+    filter: blur(75px);
+
+    @media (width >=$tablet-width) {
+      width: 769px;
+      height: 769px;
+      border-radius: 769px;
+    }
+  }
+
+  @media (width >=$tablet-width) {
+    padding: 56px 125px 40px;
+  }
+}
+
+.party-token__title {
+  margin-bottom: 60px;
+
+  @media (width >=$tablet-width) {
+    margin-bottom: 49px;
+  }
+}
+
+.party-token__list {
+  position: relative;
+
+
+  &::before {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    content: "";
+    margin: 0 auto;
+
+    width: 152px;
+    height: 152px;
+    opacity: 0.75;
+    background: url("~images/home/smile.gif") 50% / cover no-repeat;
+
+    @media (width >=$tablet-width) {
+      top: 5%;
+
+      width: 200px;
+      height: 200px;
+      opacity: 1;
+    }
+  }
+
+  &--mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 44px;
+
+    @media (width >=$tablet-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (width >=$tablet-width) {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 29px;
+    }
+  }
+}
+
+.party-token__first-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+
+  & .party-token__item {
+    &:nth-child(1) {
+      margin-left: 50px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 30px;
+    }
+  }
+}
+
+.party-token__second-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 40px;
+
+  & .party-token__item {
+    &:nth-child(1) {
+      margin-right: 50px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.party-token__item {
+  display: inline-flex;
+  justify-content: center;
+
+  min-width: 180px;
+  padding: 4px 16px 8px;
+  color: $color-grey--dark;
+  border-radius: 60px;
+  background: var(--Gradient, linear-gradient(180deg, #FFB900 16.67%, #FF9000 92.36%));
+
+  @media (width >=$tablet-width) {
+    min-width: 260px;
+    padding: 8px 16px 12px;
+  }
+
+  &--mobile {
+    &:nth-child(odd) {
+      align-self: flex-start;
+    }
+
+    &:nth-child(even) {
+      align-self: flex-end;
+    }
+
+    &:nth-child(1) {
+      margin-left: 30px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 20px;
+    }
+
+    &:nth-child(4) {
+      margin-right: 20px;
+    }
+  }
+}
+
+
+.party-token__subtitle {
+  position: relative;
+  display: inline-block;
+  color: $color-white;
+
+  font-size: 18px;
+  font-style: normal;
+
+  line-height: normal;
+  padding-bottom: 4px;
+  margin-bottom: 16px;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: 0;
+    height: 1px;
+    background: #FFFFDF;
+    -webkit-box-shadow: 0px 0px 4px 0px #FFFFDF;
+    -moz-box-shadow: 0px 0px 4px 0px #FFFFDF;
+    box-shadow: 0px 0px 4px 0px #FFFFDF;
+  }
+
+  @media (width >=$tablet-width) {
+    font-size: 24px;
+  }
+}
+
+.party-token__text {
+  padding: 0 24px;
+
+  @media (width >=$tablet-width) {
+    padding: 0 117px;
+  }
+}
+
+.party-token__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  li>a {
+    width: 100%;
+    min-height: 50px;
+
+    color: #FFFFDF;
+
+    text-align: center;
+    font-variant-numeric: ordinal;
+    font-feature-settings: 'ss01' on, 'salt' on, 'ss08' on, 'ss06' on, 'ss03' on, 'ss05' on, 'ss04' on, 'ss09' on, 'clig' off, 'liga' off;
+
+    font-family: $font-family--petch;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    @media (width >=$tablet-width) {
+      width: auto;
+    }
+  }
+
+  @media (width >=$tablet-width) {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

@@ -4,11 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="owl.carousel.min.css" />
   <link rel="stylesheet" href="index.css" />
-  <script src="index.js" defer></script>
+
+  <script src="jquery-3.7.1.min.js" defer></script>
+  <script src="owl.carousel.min.js" defer></script>
+  <script src="home.js" defer></script>
 </head>
 
-<body class="page-body card card--epic">
+<body class="page-body page-home">
 
   <header class="page-header">
     <div class="container">
@@ -138,7 +143,12 @@
               </svg>
             </button>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Global Telegram Group</a></li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img class="dropdown-item-custom" src="images/flags/group.png" width="20" height="20" alt="flag icon">
+                  Global Telegram Group
+                </a>
+              </li>
               <li>
                 <a class="dropdown-item" href="#">
                   <img src="images/flags/global.png" width="16" height="16" alt="flag icon">
@@ -228,8 +238,7 @@
             </a>
           </li>
         </ul>
-        <a class="button button--yellow hide-mobile" href="#!">Sing up</a>
-        <a class="button button--yellow hide-desktop" href="#!">Log in</a>
+        <a class="button button--yellow" href="#!">Log in</a>
       </div>
       <nav class="page-header__main-nav main-nav">
         <a class="page-header__logo hide-desktop" href="#!">
@@ -270,273 +279,657 @@
   </header>
 
   <main class="page-main">
-    <section class="single-card">
+    <section class="intro">
       <div class="container">
-        <div class="single-card__wrapper">
-          <div class="single-card__video-wrapper">
-            <span class="single-card__rarity">Uncommon</span>
-            <video class="single-card__video" width="343" height="343" muted="true" autoplay playsinline>
-              <source src="videos/example.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+        <video class="video-background" muted="true" preload="auto" autoplay playsinline loop>
+          <source src="videos/home-bg.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <ul class="intro__list">
+          <li class="paragraph paragraph--2-bold intro__item intro__item--blue">Play and Earn</li>
+          <li class="paragraph paragraph--2-bold intro__item intro__item--green">AI Gaming</li>
+          <li class="paragraph paragraph--2-bold intro__item intro__item--pink">NFT Assets</li>
+        </ul>
+        <h2 class="title title--2 intro__title">The glory awaits you in virtual battle arenas!</h2>
+        <div class="intro__links">
+          <p class="paragraph paragraph--1-bold intro__paragraph">Free to play!</p>
+          <button class="button button--yellow intro__button" type="button">Download game</button>
+          <button class="button button--black intro__button" type="button">
+            Watch Gameplay
+            <svg viewBox="0 0 24 24" width="24" height="24">
+              <use href="images/sprite.svg#play"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="party-token">
+      <div class="container">
+        <div class="party-token__wrapper">
+          <h2 class="title title--2 party-token__title">$ARTY TOKEN</h2>
+          <ul class="party-token__list party-token__list--mobile">
+            <li class="title title--3 party-token__item party-token__item--mobile">Currency</li>
+            <li class="title title--3 party-token__item party-token__item--mobile">DAO</li>
+            <li class="title title--3 party-token__item party-token__item--mobile">Rewards</li>
+            <li class="title title--3 party-token__item party-token__item--mobile">Launchpad</li>
+            <li class="title title--3 party-token__item party-token__item--mobile">NFTs</li>
+            <li class="title title--3 party-token__item party-token__item--mobile">Staking</li>
+          </ul>
+          <div class="party-token__list party-token__list--desktop">
+            <ul class="party-token__first-list">
+              <li class="title title--3 party-token__item party-token__item--desktop">Currency</li>
+              <li class="title title--3 party-token__item party-token__item--desktop">Rewards</li>
+              <li class="title title--3 party-token__item party-token__item--desktop">NFTs</li>
+            </ul>
+            <ul class="party-token__second-list">
+              <li class="title title--3 party-token__item party-token__item--desktop">DAO</li>
+              <li class="title title--3 party-token__item party-token__item--desktop">Launchpad</li>
+              <li class="title title--3 party-token__item party-token__item--desktop">Staking</li>
+            </ul>
           </div>
-          <div class="single-card__content">
-            <h2 class="title title--2 single-card__title">GlitchGorilla</h2>
-            <div>
-              <div class="single-card__category">
-                <p class="dotted-line"></p>
-                <div class="single-card__info">
-                  <p class="single-card__info-text">
-                    <span class="paragraph paragraph--1">Category</span>
-                    <span class="paragraph paragraph--1">Legends</span>
-                  </p>
-                  <p class="single-card__info-text">
-                    <span class="paragraph paragraph--1">Total Supply:</span>
-                    <span class="paragraph paragraph--1">24</span>
-                  </p>
-                  <div class="single-card__progress">
-                    <div class="progress" style="height: 7px;">
-                      <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="100"
-                        aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
-                    <p class="paragraph paragraph--1">
-                      75% sold
-                      <span>Only 20 left!</span>
-                    </p>
-                  </div>
+          <h5 class="title title--5 party-token__subtitle">25,000,000 $ARTY</h5>
+          <p class="paragraph paragraph--1-bold party-token__text">
+            $ARTY is a native deflationary cryptocurrency and governance token of the Artyfact ecosystem. The integrated
+            Play-and-earn solutions maintain a constant demand for the $ARTY, which continuously stimulates the growth
+            of
+            its value.
+          </p>
+        </div>
+        <ul class="party-token__buttons">
+          <li>
+            <a class="button button--yellow" href="#!">
+              <img src="images/home/okx.svg">
+              $ARTY on OKX
+            </a>
+          </li>
+          <li>
+            <a class="button button--yellow" href="#!">
+              <img src="images/home/kucoin.svg">
+              $ARTY on KuCoin
+            </a>
+          </li>
+          <li>
+            <a class="button button--yellow" href="#!">
+              <img src="images/home/bybit.svg">
+              $ARTY on Bybit
+            </a>
+          </li>
+          <li>
+            <a class="button button--yellow" href="#!">
+              <img src="images/home/htx.svg">
+              $ARTY on HTX
+            </a>
+          </li>
+          <li>
+            <a class="button button--yellow" href="#!">
+              <img src="images/home/gate.svg">
+              $ARTY on Gate.io
+            </a>
+          </li>
+          <li>
+            <a class="button button--yellow" href="#!">
+              <img src="images/home/bitget.svg">
+              $ARTY on BitGet
+            </a>
+          </li>
+          <li>
+            <a class="button button--yellow" href="#!">
+              <img src="images/home/mexc.svg">
+              $ARTY on MEXC
+            </a>
+          </li>
+          <li>
+            <a class="button button--yellow" href="#!">
+              <img src="images/home/bunny.svg">
+              $ARTY on Pancake Swap
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="carousels">
+      <h2 class="title title--2 carousels__title">NFTS</h2>
+      <div class="owl-carousel owl-loaded owl-drag carousels__direction--right">
+        <div class="owl-stage-outer">
+          <ul class="owl-stage">
+            <li class="owl-item">
+              <div class="marketplace-card">
+                <div class="marketplace-card__img-wrapper marketplace-card__img-wrapper--uncommon">
+                  <span class="marketplace-card__rarity marketplace-card__rarity--uncommon">Uncommon</span>
+                  <video width="196" height="192" muted="true" preload="auto" autoplay playsinline>
+                    <source src="videos/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
-                <p class="dotted-line"></p>
+                <a class="button button--yellow" type="button" href="#!">Buy this NFT</a>
               </div>
-              <div class="single-card__price">
-                <p>
-                  <span class="paragraph paragraph--1">Current price</span>
-                  <span class="paragraph paragraph--1"><span>10</span> $ARTY ($199)</span>
+            </li>
+            <li class="owl-item">
+              <div class="marketplace-card">
+                <div class="marketplace-card__img-wrapper marketplace-card__img-wrapper--uncommon">
+                  <span class="marketplace-card__rarity marketplace-card__rarity--uncommon">Uncommon</span>
+                  <video width="196" height="192" muted="true" preload="auto" autoplay playsinline>
+                    <source src="videos/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <a class="button button--yellow" type="button" href="#!">Buy this NFT</a>
+              </div>
+            </li>
+            <li class="owl-item">
+              <div class="marketplace-card">
+                <div class="marketplace-card__img-wrapper marketplace-card__img-wrapper--uncommon">
+                  <span class="marketplace-card__rarity marketplace-card__rarity--uncommon">Uncommon</span>
+                  <video width="196" height="192" muted="true" preload="auto" autoplay playsinline>
+                    <source src="videos/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <a class="button button--yellow" type="button" href="#!">Buy this NFT</a>
+              </div>
+            </li>
+            <li class="owl-item">
+              <div class="marketplace-card">
+                <div class="marketplace-card__img-wrapper marketplace-card__img-wrapper--uncommon">
+                  <span class="marketplace-card__rarity marketplace-card__rarity--uncommon">Uncommon</span>
+                  <video width="196" height="192" muted="true" preload="auto" autoplay playsinline>
+                    <source src="videos/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <a class="button button--yellow" type="button" href="#!">Buy this NFT</a>
+              </div>
+            </li>
+            <li class="owl-item">
+              <div class="marketplace-card">
+                <div class="marketplace-card__img-wrapper marketplace-card__img-wrapper--uncommon">
+                  <span class="marketplace-card__rarity marketplace-card__rarity--uncommon">Uncommon</span>
+                  <video width="196" height="192" muted="true" preload="auto" autoplay playsinline>
+                    <source src="videos/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <a class="button button--yellow" type="button" href="#!">Buy this NFT</a>
+              </div>
+            </li>
+            <li class="owl-item">
+              <div class="marketplace-card">
+                <div class="marketplace-card__img-wrapper marketplace-card__img-wrapper--uncommon">
+                  <span class="marketplace-card__rarity marketplace-card__rarity--uncommon">Uncommon</span>
+                  <video width="196" height="192" muted="true" preload="auto" autoplay playsinline>
+                    <source src="videos/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <a class="button button--yellow" type="button" href="#!">Buy this NFT</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="owl-carousel owl-rtl owl-loaded owl-rtl owl-drag owl-rtl carousels__direction--left">
+        <div class="owl-stage-outer">
+          <ul class="owl-stage">
+            <li class="owl-item">
+              <div class="marketplace-card">
+                <div class="marketplace-card__img-wrapper marketplace-card__img-wrapper--uncommon">
+                  <span class="marketplace-card__rarity marketplace-card__rarity--uncommon">Uncommon</span>
+                  <video width="196" height="192" muted="true" preload="auto" autoplay playsinline>
+                    <source src="videos/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <a class="button button--yellow" type="button" href="#!">Buy this NFT</a>
+              </div>
+            </li>
+            <li class="owl-item">
+              <div class="marketplace-card">
+                <div class="marketplace-card__img-wrapper marketplace-card__img-wrapper--uncommon">
+                  <span class="marketplace-card__rarity marketplace-card__rarity--uncommon">Uncommon</span>
+                  <video width="196" height="192" muted="true" preload="auto" autoplay playsinline>
+                    <source src="videos/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <a class="button button--yellow" type="button" href="#!">Buy this NFT</a>
+              </div>
+            </li>
+            <li class="owl-item">
+              <div class="marketplace-card">
+                <div class="marketplace-card__img-wrapper marketplace-card__img-wrapper--uncommon">
+                  <span class="marketplace-card__rarity marketplace-card__rarity--uncommon">Uncommon</span>
+                  <video width="196" height="192" muted="true" preload="auto" autoplay playsinline>
+                    <source src="videos/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <a class="button button--yellow" type="button" href="#!">Buy this NFT</a>
+              </div>
+            </li>
+            <li class="owl-item">
+              <div class="marketplace-card">
+                <div class="marketplace-card__img-wrapper marketplace-card__img-wrapper--uncommon">
+                  <span class="marketplace-card__rarity marketplace-card__rarity--uncommon">Uncommon</span>
+                  <video width="196" height="192" muted="true" preload="auto" autoplay playsinline>
+                    <source src="videos/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <a class="button button--yellow" type="button" href="#!">Buy this NFT</a>
+              </div>
+            </li>
+            <li class="owl-item">
+              <div class="marketplace-card">
+                <div class="marketplace-card__img-wrapper marketplace-card__img-wrapper--uncommon">
+                  <span class="marketplace-card__rarity marketplace-card__rarity--uncommon">Uncommon</span>
+                  <video width="196" height="192" muted="true" preload="auto" autoplay playsinline>
+                    <source src="videos/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <a class="button button--yellow" type="button" href="#!">Buy this NFT</a>
+              </div>
+            </li>
+            <li class="owl-item">
+              <div class="marketplace-card">
+                <div class="marketplace-card__img-wrapper marketplace-card__img-wrapper--uncommon">
+                  <span class="marketplace-card__rarity marketplace-card__rarity--uncommon">Uncommon</span>
+                  <video width="196" height="192" muted="true" preload="auto" autoplay playsinline>
+                    <source src="videos/example.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <a class="button button--yellow" type="button" href="#!">Buy this NFT</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <a class="button button--yellow carousels__button" href="#!">Join NFT Marketplace</a>
+    </section>
+    <section class="features">
+      <div class="container">
+        <h2 class="title title--2 features__title">Features</h2>
+        <div class="swiper swiper-features">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <div class="marketplace-card">
+                <div class="marketplace-card__img-wrapper marketplace-card__img-wrapper--uncommon">
+                  <span class="marketplace-card__rarity marketplace-card__rarity--uncommon">Skills</span>
+                  <video muted="true" preload="auto" autoplay playsinline loop>
+                    <source src="videos/skills.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <p class="paragraph paragraph--1 swiper-features__text">
+                  Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                  aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                  himenaeos.
                 </p>
-                <a class="button button--yellow" href="#!">Buy</a>
               </div>
-              <p class="paragraph paragraph--1 single-card__text">The avatar features a sleek and metallic gorilla body,
-                with a muscular
-                build that exudes strength and
-                resilience. Its fur appears to be made of shimmering lines of code, creating an otherworldly effect as
-                if
-                it is a creature born from the digital realm itself. The color palette is a striking combination of
-                metallic silvers, deep blacks, and vibrant electric blues and greens, adding to the avatar's futuristic
-                and high-tech aesthetic.</p>
-              <div class="single-card__community">
-                <p class="paragraph paragraph--1-bold single-card__community-title">Community Marketplace</p>
-                <p class="dotted-line"></p>
-                <div class="mobile-community">
-                  <div>
-                    <div class="mobile-community__text">
-                      <p class="paragraph paragraph--2-bold">User Name</p>
-                      <p class="paragraph paragraph--2 mobile-community__img">vedant</p>
-                    </div>
-                    <div class="mobile-community__text">
-                      <p class="paragraph paragraph--2-bold">Edition No.</p>
-                      <p class="paragraph paragraph--2">15</p>
-                    </div>
-                    <div class="mobile-community__text">
-                      <p class="paragraph paragraph--2-bold">Time</p>
-                      <p class="paragraph paragraph--2">2 months ago</p>
-                    </div>
-                  </div>
-                  <div>
-                    <p class="paragraph paragraph--2 mobile-community__text">15 $ARTY</p>
-                    <a class="button button--yellow mobile-community__button" href="#!">Buy</a>
-                  </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="marketplace-card">
+                <div class="marketplace-card__img-wrapper marketplace-card__img-wrapper--uncommon">
+                  <span class="marketplace-card__rarity marketplace-card__rarity--uncommon">Jetpack</span>
+                  <video muted="true" preload="auto" autoplay playsinline loop>
+                    <source src="videos/jetpack.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
-                <p class="dotted-line"></p>
-                <div class="mobile-community">
-                  <div>
-                    <div class="mobile-community__text">
-                      <p class="paragraph paragraph--2-bold">User Name</p>
-                      <p class="paragraph paragraph--2 mobile-community__img">vedant</p>
-                    </div>
-                    <div class="mobile-community__text">
-                      <p class="paragraph paragraph--2-bold">Edition No.</p>
-                      <p class="paragraph paragraph--2">15</p>
-                    </div>
-                    <div class="mobile-community__text">
-                      <p class="paragraph paragraph--2-bold">Time</p>
-                      <p class="paragraph paragraph--2">2 months ago</p>
-                    </div>
-                  </div>
-                  <div>
-                    <p class="paragraph paragraph--2 mobile-community__text">15 $ARTY</p>
-                    <a class="button button--yellow mobile-community__button" href="#!">Buy</a>
-                  </div>
-                </div>
-                <table class="single-card__table">
-                  <thead>
-                    <tr>
-                      <th class="paragraph paragraph--2-bold">User Name</th>
-                      <th class="paragraph paragraph--2-bold">Edition No.</th>
-                      <th class="paragraph paragraph--2-bold">Time</th>
-                      <th class="paragraph paragraph--2-bold">Price</th>
-                      <th class="paragraph paragraph--2-bold"></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td class="paragraph paragraph--2">
-                        <p class="mobile-community__img">
-                          vedant
-                        </p>
-                      </td>
-                      <td class="paragraph paragraph--2">15</td>
-                      <td class="paragraph paragraph--2">2 months ago</td>
-                      <td class="paragraph paragraph--2">15 $ARTY</td>
-                      <td><a class="button button--yellow" href="#!">Buy</a></td>
-                    </tr>
-                    <tr>
-                      <td class="paragraph paragraph--2">
-                        <p class="mobile-community__img">
-                          vedant
-                        </p>
-                      </td>
-                      <td class="paragraph paragraph--2">15</td>
-                      <td class="paragraph paragraph--2">2 months ago</td>
-                      <td class="paragraph paragraph--2">15 $ARTY</td>
-                      <td><a class="button button--yellow" href="#!">Buy</a></td>
-                    </tr>
-                  </tbody>
-                </table>
+                <p class="paragraph paragraph--1 swiper-features__text">
+                  Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                  aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                  himenaeos.
+                </p>
               </div>
-            </div>
+            </li>
+            <li class="swiper-slide">
+              <div class="marketplace-card">
+                <div class="marketplace-card__img-wrapper marketplace-card__img-wrapper--uncommon">
+                  <span class="marketplace-card__rarity marketplace-card__rarity--uncommon">Vechikles</span>
+                  <video muted="true" preload="auto" autoplay playsinline loop>
+                    <source src="videos/vechikles.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+                <p class="paragraph paragraph--1 swiper-features__text">
+                  Rorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac
+                  aliquet odio mattis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+                  himenaeos.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-features__buttons">
+          <div class="button button--yellow swiper-features__button swiper-features__button--prev">
+            <img src="images/home/Arrow.svg" width="24" height="24">
+          </div>
+          <div class="button button--yellow swiper-features__button swiper-features__button--next">
+            <img src="images/home/Arrow.svg" width="24" height="24">
           </div>
         </div>
       </div>
     </section>
-    <section class="offers">
+    <section class="news">
       <div class="container">
-        <h4 class="title title--4 offers__title">Special offers</h4>
-        <div class="row row-cols-2 row-cols-xl-3 marketplace__cards offers__list">
-          <div class="col">
-            <div class="marketplace-card">
-              <div class="marketplace-card__img-wrapper marketplace-card__img-wrapper--uncommon">
-                <span class="marketplace-card__rarity marketplace-card__rarity--uncommon">Uncommon</span>
-                <video width="167" height="167" muted="true" autoplay playsinline>
-                  <source src="videos/example.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="marketplace-card__content">
-                <span
-                  class="marketplace-card__rarity marketplace-card__rarity-mobile marketplace-card__rarity--uncommon">Uncommon</span>
-                <h4 class="marketplace-card__title title title--5">Glitch Gorilla</h4>
-                <div class="progress marketplace-card__progress" style="height: 7px;">
-                  <div class="progress-bar marketplace-card__progress-bar" role="progressbar" style="width: 70%"
-                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p class="marketplace-card__sold-info paragraph paragraph--2">
-                  75% sold
-                  <span>Only 20 left!</span>
-                </p>
-                <a class="button button--yellow marketplace-card__button" type="button" href="#!">Buy this NFT</a>
-              </div>
-            </div>
+        <h4 class="title title--4 news__title">latest news</h4>
+        <ul class="news__list">
+          <li class="news__item">
+            <a href="#!" class="marketplace-card">
+              <p class="marketplace-card__img-wrapper marketplace-card__img-wrapper--game">
+                <span class="marketplace-card__rarity marketplace-card__rarity--game">Game</span>
+                <img class="news__item-img" src="images/home/skill-system.jpg">
+              </p>
+              <p class="news__item-content">
+                <span class="paragraph paragraph--1-bold">ARTYFACT INTRODUCES SKILL SYSTEM!</span>
+                <span class="news__item-footer">
+                  <span class="paragraph paragraph--1">18/04/2024</span>
+                  <span>Read more <img src="images/home/Chevron-side.svg"></span>
+                </span>
+              </p>
+            </a>
+          </li>
+          <li class="news__item">
+            <a href="#!" class="marketplace-card">
+              <p class="marketplace-card__img-wrapper marketplace-card__img-wrapper--game">
+                <span class="marketplace-card__rarity marketplace-card__rarity--game">Game</span>
+                <img class="news__item-img" src="images/home/technologies.jpg">
+              </p>
+              <p class="news__item-content">
+                <span class="paragraph paragraph--1-bold">ARTYFACT IS TRANSFORMING GAMING!</span>
+                <span class="news__item-footer">
+                  <span class="paragraph paragraph--1">18/04/2024</span>
+                  <span>Read more <img src="images/home/Chevron-side.svg"></span>
+                </span>
+              </p>
+            </a>
+          </li>
+          <li class="news__item">
+            <a href="#!" class="marketplace-card">
+              <p class="marketplace-card__img-wrapper marketplace-card__img-wrapper--game">
+                <span class="marketplace-card__rarity marketplace-card__rarity--game">Game</span>
+                <img class="news__item-img" src="images/home/transforms.jpg">
+              </p>
+              <p class="news__item-content">
+                <span class="paragraph paragraph--1-bold">ARTYFACT AI TECHNOLOGIES: PLAYER-EXPERIENCE MODELING</span>
+                <span class="news__item-footer">
+                  <span class="paragraph paragraph--1">18/04/2024</span>
+                  <span>Read more <img src="images/home/Chevron-side.svg"></span>
+                </span>
+              </p>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="investors">
+      <h2 class="title title--2 investors__title">Partners <br>and Investors</h2>
+      <div class="owl-carousel owl-loaded owl-drag investors-carousel">
+        <div class="owl-stage-outer">
+          <ul class="owl-stage">
+            <li class="owl-item">
+              <a class="investors__link" href="#!">
+                <span class="investors__link-bg"></span>
+                <img src="images/home/investors/epic-games.png">
+              </a>
+            </li>
+            <li class="owl-item">
+              <a class="investors__link" href="#!">
+                <span class="investors__link-bg"></span>
+                <img src="images/home/investors/Binance-Smart-Chain.png">
+              </a>
+            </li>
+            <li class="owl-item">
+              <a class="investors__link" href="#!">
+                <span class="investors__link-bg"></span>
+                <img src="images/home/investors/okx.png">
+              </a>
+            </li>
+            <li class="owl-item">
+              <a class="investors__link" href="#!">
+                <span class="investors__link-bg"></span>
+                <img src="images/home/investors/a.png">
+              </a>
+            </li>
+            <li class="owl-item">
+              <a class="investors__link" href="#!">
+                <span class="investors__link-bg"></span>
+                <img src="images/home/investors/wepad.png">
+              </a>
+            </li>
+            <li class="owl-item">
+              <a class="investors__link" href="#!">
+                <span class="investors__link-bg"></span>
+                <img src="images/home/investors/york.png">
+              </a>
+            </li>
+            <li class="owl-item">
+              <a class="investors__link" href="#!">
+                <span class="investors__link-bg"></span>
+                <img src="images/home/investors/kairon.png">
+              </a>
+            </li>
+            <li class="owl-item">
+              <a class="investors__link" href="#!">
+                <span class="investors__link-bg"></span>
+                <img src="images/home/investors/stan.png">
+              </a>
+            </li>
+            <li class="owl-item">
+              <a class="investors__link" href="https://studio-801.com/">
+                <span class="investors__link-bg"></span>
+                <img src="images/home/investors/801.png">
+              </a>
+            </li>
+            <li class="owl-item">
+              <a class="investors__link" href="https://codastudio.dev/">
+                <span class="investors__link-bg"></span>
+                <img src="images/home/investors/Coda.png">
+              </a>
+            </li>
+            <li class="owl-item">
+              <a class="investors__link" href="https://ventures.poolz.finance/">
+                <span class="investors__link-bg"></span>
+                <img src="images/home/investors/Poolz.png">
+              </a>
+            </li>
+            <li class="owl-item">
+              <a class="investors__link" href="https://aussie.capitalk">
+                <span class="investors__link-bg"></span>
+                <img src="images/home/investors/Aussie.png">
+              </a>
+            </li>
+            <li class="owl-item">
+              <a class="investors__link" href="https://x.com/kefventures">
+                <span class="investors__link-bg"></span>
+                <img src="images/home/investors/KEF.png">
+              </a>
+            </li>
+            <li class="owl-item">
+              <a class="investors__link" href="https://ivendpay.com">
+                <span class="investors__link-bg"></span>
+                <img src="images/home/investors/IvendPay.png">
+              </a>
+            </li>
+    </section>
+    <section class="roadmap">
+      <div class="container">
+        <h2 class="title title--2 roadmap__title">Roadmap</h2>
+        <div class="roadmap__cards">
+          <div class="roadmap__card">
+            <h5 class="title title--5 roadmap__subtitle roadmap__subtitle--done">NFT Stage</h5>
+            <ul class="roadmap__list">
+              <li class="paragraph paragraph--1-bold">WEB Platform</licla>
+              <li class="paragraph paragraph--1-bold">Staking</li>
+              <li class="paragraph paragraph--1-bold">NFT Marketplace</li>
+              <li class="paragraph paragraph--1-bold">Artyfact INO</li>
+              <li class="paragraph paragraph--1-bold">Pre-Beta</li>
+            </ul>
           </div>
-          <div class="col">
-            <div class="marketplace-card">
-              <div class="marketplace-card__img-wrapper marketplace-card__img-wrapper--uncommon">
-                <span class="marketplace-card__rarity marketplace-card__rarity--uncommon">Uncommon</span>
-                <video width="167" height="167" muted="true" autoplay playsinline>
-                  <source src="videos/example.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="marketplace-card__content">
-                <span
-                  class="marketplace-card__rarity marketplace-card__rarity-mobile marketplace-card__rarity--uncommon">Uncommon</span>
-                <h4 class="marketplace-card__title title title--5">Glitch Gorilla</h4>
-                <div class="progress marketplace-card__progress" style="height: 7px;">
-                  <div class="progress-bar marketplace-card__progress-bar" role="progressbar" style="width: 70%"
-                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p class="marketplace-card__sold-info paragraph paragraph--2">
-                  75% sold
-                  <span>Only 20 left!</span>
-                </p>
-                <a class="button button--yellow marketplace-card__button" type="button" href="#!">Buy this NFT</a>
-              </div>
-            </div>
+          <div class="roadmap__card">
+            <h5 class="title title--5 roadmap__subtitle">Beta Stage</h5>
+            <ul class="roadmap__list">
+              <li class="paragraph paragraph--1-bold">Beta</li>
+              <li class="paragraph paragraph--1-bold">Epic Store</li>
+              <li class="paragraph paragraph--1-bold">eSport Tournament</li>
+              <li class="paragraph paragraph--1-bold">Creator Contest</li>
+              <li class="paragraph paragraph--1-bold">Metaverse event</li>
+            </ul>
           </div>
-          <div class="col">
-            <div class="marketplace-card">
-              <div class="marketplace-card__img-wrapper marketplace-card__img-wrapper--uncommon">
-                <span class="marketplace-card__rarity marketplace-card__rarity--uncommon">Uncommon</span>
-                <video width="167" height="167" muted="true" autoplay playsinline>
-                  <source src="videos/example.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="marketplace-card__content">
-                <span
-                  class="marketplace-card__rarity marketplace-card__rarity-mobile marketplace-card__rarity--uncommon">Uncommon</span>
-                <h4 class="marketplace-card__title title title--5">Glitch Gorilla</h4>
-                <div class="progress marketplace-card__progress" style="height: 7px;">
-                  <div class="progress-bar marketplace-card__progress-bar" role="progressbar" style="width: 70%"
-                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p class="marketplace-card__sold-info paragraph paragraph--2">
-                  75% sold
-                  <span>Only 20 left!</span>
-                </p>
-                <a class="button button--yellow marketplace-card__button" type="button" href="#!">Buy this NFT</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="marketplace-card">
-              <div class="marketplace-card__img-wrapper marketplace-card__img-wrapper--epic">
-                <span class="marketplace-card__rarity marketplace-card__rarity--epic">Epic</span>
-                <video width="167" height="167" muted="true" autoplay playsinline>
-                  <source src="videos/example.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="marketplace-card__content">
-                <span
-                  class="marketplace-card__rarity marketplace-card__rarity-mobile marketplace-card__rarity--epic">Epic</span>
-                <h4 class="marketplace-card__title title title--5">Glitch Gorilla</h4>
-                <div class="progress marketplace-card__progress" style="height: 7px;">
-                  <div class="progress-bar marketplace-card__progress-bar" role="progressbar" style="width: 70%"
-                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p class="marketplace-card__sold-info paragraph paragraph--2">
-                  75% sold
-                  <span>Only 20 left!</span>
-                </p>
-                <a class="button button--yellow marketplace-card__button" type="button" href="#!">Buy this NFT</a>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="marketplace-card">
-              <div class="marketplace-card__img-wrapper marketplace-card__img-wrapper--rare">
-                <span class="marketplace-card__rarity marketplace-card__rarity--rare">Rare</span>
-                <video width="167" height="167" muted="true" autoplay playsinline>
-                  <source src="videos/example.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div class="marketplace-card__content">
-                <span
-                  class="marketplace-card__rarity marketplace-card__rarity-mobile marketplace-card__rarity--rare">Rare</span>
-                <h4 class="marketplace-card__title title title--5">Glitch Gorilla</h4>
-                <div class="progress marketplace-card__progress" style="height: 7px;">
-                  <div class="progress-bar marketplace-card__progress-bar" role="progressbar" style="width: 70%"
-                    aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <p class="marketplace-card__sold-info paragraph paragraph--2">
-                  75% sold
-                  <span>Only 20 left!</span>
-                </p>
-                <a class="button button--yellow marketplace-card__button" type="button" href="#!">Buy this NFT</a>
-              </div>
-            </div>
+          <div class="roadmap__card">
+            <h5 class="title title--5 roadmap__subtitle">Artyfact 1.0</h5>
+            <ul class="roadmap__list">
+              <li class="paragraph paragraph--1-bold">Artyfact 1.0</li>
+              <li class="paragraph paragraph--1-bold">IOS</li>
+              <li class="paragraph paragraph--1-bold">Android</li>
+              <li class="paragraph paragraph--1-bold">Playstation</li>
+              <li class="paragraph paragraph--1-bold">Xbox</li>
+            </ul>
           </div>
         </div>
+      </div>
+    </section>
+    <section class="community">
+      <div class="container">
+        <h2 class="title title--2 community__title">join the <br> community</h2>
+        <ul class="desktop-panel__list community__list">
+          <li>
+            <a class="desktop-panel__link" href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#X"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="desktop-panel__link" href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Discord"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="dropdown">
+            <button class="button dropdown-toggle desktop-panel__link" type="button" data-bs-toggle="dropdown">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Telegram"></use>
+              </svg>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img class="dropdown-item-custom" src="images/flags/group.png" width="20" height="20" alt="flag icon">
+                  Global Telegram Group
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/global.png" width="16" height="16" alt="flag icon">
+                  Global Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/german.png" width="16" height="16" alt="flag icon">
+                  German Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/french.png" width="16" height="16" alt="flag icon">
+                  French Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/korean.png" width="16" height="16" alt="flag icon">
+                  Korean Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/chinese.png" width="16" height="16" alt="flag icon">
+                  Chinese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/russian.png" width="16" height="16" alt="flag icon">
+                  Russian Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/italian.png" width="16" height="16" alt="flag icon">
+                  Italian Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/japanese.png" width="16" height="16" alt="flag icon">
+                  Japanese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/portuguese.png" width="16" height="16" alt="flag icon">
+                  <img src="images/flags/brazilian.png" width="16" height="16" alt="flag icon">
+                  Portuguese and Brazilian Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/turkish.png" width="16" height="16" alt="flag icon">
+                  Turkish Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/vietnamese.png" width="16" height="16" alt="flag icon">
+                  Vietnamese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/spanish.png" width="16" height="16" alt="flag icon">
+                  Spanish Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/arabic.png" width="16" height="16" alt="flag icon">
+                  Arabic Telegram Channel
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="desktop-panel__link" href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="desktop-panel__link" href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="desktop-panel__link" href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <img class="community__img" src="images/home/community.png" alt="">
+        <form class="community__form">
+          <input class="paragraph paragraph--2 community__form-input" type="email" placeholder="Your email" required>
+          <button class="button button--yellow community__form-button" type="submit">Subscribe</button>
+        </form>
       </div>
     </section>
   </main>
@@ -546,7 +939,7 @@
       <div class="row row-cols-md-2 row-cols-lg-1 page-footer__token">
         <div class="page-footer__token-heading">
           <h3 class="title title--3">$ARTY Token</h3>
-          <p class="paragraph paragraph--1">Current price: <span>$1.75</span></p>
+          <p class="paragraph paragraph--1-bold">Current price: <span>$1.75</span></p>
         </div>
         <div class="page-footer__token-content">
           <p class="paragraph paragraph--2">Available on:</p>
@@ -632,95 +1025,95 @@
                 <use href="images/sprite.svg#Discord"></use>
               </svg>
             </a></li>
-            <li class="dropdown">
-              <a class="button dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                <svg viewBox="0 0 20 20" width="20" height="20">
-                  <use href="images/sprite.svg#Telegram"></use>
-                </svg>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Global Telegram Group</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img src="images/flags/global.png" width="16" height="16" alt="flag icon">
-                    Global Telegram Channel
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img src="images/flags/german.png" width="16" height="16" alt="flag icon">
-                    German Telegram Channel
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img src="images/flags/french.png" width="16" height="16" alt="flag icon">
-                    French Telegram Channel
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img src="images/flags/korean.png" width="16" height="16" alt="flag icon">
-                    Korean Telegram Channel
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img src="images/flags/chinese.png" width="16" height="16" alt="flag icon">
-                    Chinese Telegram Channel
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img src="images/flags/russian.png" width="16" height="16" alt="flag icon">
-                    Russian Telegram Channel
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img src="images/flags/italian.png" width="16" height="16" alt="flag icon">
-                    Italian Telegram Channel
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img src="images/flags/japanese.png" width="16" height="16" alt="flag icon">
-                    Japanese Telegram Channel
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img src="images/flags/portuguese.png" width="16" height="16" alt="flag icon">
-                    <img src="images/flags/brazilian.png" width="16" height="16" alt="flag icon">
-                    Portuguese and Brazilian Channel
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img src="images/flags/turkish.png" width="16" height="16" alt="flag icon">
-                    Turkish Telegram Channel
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img src="images/flags/vietnamese.png" width="16" height="16" alt="flag icon">
-                    Vietnamese Telegram Channel
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img src="images/flags/spanish.png" width="16" height="16" alt="flag icon">
-                    Spanish Telegram Channel
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    <img src="images/flags/arabic.png" width="16" height="16" alt="flag icon">
-                    Arabic Telegram Channel
-                  </a>
-                </li>
-              </ul>
-            </li>
+          <li class="dropdown">
+            <a class="button dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Telegram"></use>
+              </svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Global Telegram Group</a></li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/global.png" width="16" height="16" alt="flag icon">
+                  Global Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/german.png" width="16" height="16" alt="flag icon">
+                  German Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/french.png" width="16" height="16" alt="flag icon">
+                  French Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/korean.png" width="16" height="16" alt="flag icon">
+                  Korean Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/chinese.png" width="16" height="16" alt="flag icon">
+                  Chinese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/russian.png" width="16" height="16" alt="flag icon">
+                  Russian Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/italian.png" width="16" height="16" alt="flag icon">
+                  Italian Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/japanese.png" width="16" height="16" alt="flag icon">
+                  Japanese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/portuguese.png" width="16" height="16" alt="flag icon">
+                  <img src="images/flags/brazilian.png" width="16" height="16" alt="flag icon">
+                  Portuguese and Brazilian Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/turkish.png" width="16" height="16" alt="flag icon">
+                  Turkish Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/vietnamese.png" width="16" height="16" alt="flag icon">
+                  Vietnamese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/spanish.png" width="16" height="16" alt="flag icon">
+                  Spanish Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/arabic.png" width="16" height="16" alt="flag icon">
+                  Arabic Telegram Channel
+                </a>
+              </li>
+            </ul>
+          </li>
           <li><a href="#!">
               <svg viewBox="0 0 20 20" width="20" height="20">
                 <use href="images/sprite.svg#Instagram"></use>

@@ -1,0 +1,47 @@
+.features {
+  text-align: center;
+  margin-bottom: 80px;
+
+  .marketplace-card {
+    padding: 12px;
+  }
+
+  .marketplace-card__rarity {
+    font-family: $font-family--quantico;
+    font-size: 18px;
+
+    padding: 4px 12px;
+  }
+
+  video {
+    width: 100%;
+  }
+}
+
+.features__title {
+  margin-bottom: 32px;
+}
+
+.swiper-features {
+  margin-bottom: 32px;
+}
+
+.swiper-features__text {
+  padding: 12px;
+  text-align: left;
+}
+
+.swiper-features__buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.swiper-features__button {
+  padding: 10px;
+
+  &--next {
+    transform: rotate(180deg);
+  }
+}

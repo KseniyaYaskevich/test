@@ -60,6 +60,12 @@
   }
 }
 
+.page-footer__token-content {
+  p:first-child {
+    margin-bottom: 16px;
+  }
+}
+
 .page-footer__partners {
   --bs-gutter-x: 4px;
   --bs-gutter-y: 4px;
@@ -87,7 +93,7 @@
 .page-footer__token-copyright {
   display: none;
   opacity: 0.6;
-  
+
   margin-bottom: 16px;
 
   @media (width >=$desktop-width) {

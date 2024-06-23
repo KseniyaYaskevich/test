@@ -1,12 +1,10 @@
 .dropdown {
   position: relative;
 
-  &:hover,
-  &:focus,
-  &:focus-within {
+  &:hover {
     .dropdown-menu {
-      visibility: visible;
       transform: rotateX(0) translateX(-48%);
+      z-index: 10000 !important;
 
       @media (width >=$tablet-width) {
         transform: rotateX(0) translateX(-50%);
@@ -31,10 +29,9 @@
   background: $color-grey--dark-50;
   backdrop-filter: blur(20px);
 
-  visibility: hidden;
   transform: rotateX(90deg) translateX(-48%);
   transform-origin: top;
-  transition: transform .2s ease-out, visibility .0s ease-out;
+  transition: transform .2s ease-out;
 
   @media (width >=$tablet-width) {
     left: 50%;
@@ -70,11 +67,8 @@
 .page-footer {
   .dropdown {
 
-    &:hover,
-    &:focus,
-    &:focus-within {
+    &:hover {
       .dropdown-menu {
-        visibility: visible;
         transform: rotateX(0) translateX(-40%);
 
         @media (width >=720px) {
