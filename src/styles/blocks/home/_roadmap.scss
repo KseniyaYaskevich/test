@@ -3,47 +3,50 @@
 
   @media (width >=$tablet-width) {
     margin-bottom: 170px;
-
   }
 
-  & .container {
-    position: relative;
-    padding: 40px 24px;
-    border-radius: 24px;
-    fill: var(--dark-grey-50, rgba(23, 23, 23, 0.50));
-    backdrop-filter: blur(20px);
-    overflow: hidden;
+  & .container {}
+}
 
-    &::before {
-      position: absolute;
-      top: -40%;
-      left: -20%;
-      z-index: 0;
+.roadmap__wrapper {
+  position: relative;
+  padding: 40px 24px;
+  border-radius: 24px;
+  fill: var(--dark-grey-50, rgba(23, 23, 23, 0.50));
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+  max-width: 474px;
+margin: 0 auto;
+  &::before {
+    position: absolute;
+    top: -40%;
+    left: -20%;
+    z-index: 0;
 
-      content: "";
-      width: 228px;
-      height: 949px;
+    content: "";
+    width: 228px;
+    height: 949px;
 
-      border-radius: 949px;
-      opacity: 0.8;
-      background: radial-gradient(50% 50% at 50% 50%, #FFD232 0%, rgba(255, 210, 50, 0.00) 100%);
+    border-radius: 949px;
+    opacity: 0.8;
+    background: radial-gradient(50% 50% at 50% 50%, #FFD232 0%, rgba(255, 210, 50, 0.00) 100%);
 
-      filter: blur(100px);
+    filter: blur(100px);
 
-      @media (width >=$tablet-width) {
-        width: 769px;
-        height: 769px;
-        border-radius: 769px;
+    @media (width >=$desktop-width) {
+      width: 769px;
+      height: 769px;
+      border-radius: 769px;
 
-        top: 50%;
-        left: -45%;
-        transform: translate(0, -50%);
-      }
+      top: 50%;
+      left: -45%;
+      transform: translate(0, -50%);
     }
+  }
 
-    @media (width >=$tablet-width) {
-      padding: 55px 120px 60px;
-    }
+  @media (width >=$desktop-width) {
+    padding: 55px 120px 60px;
+    max-width: 100%;
   }
 }
 
@@ -51,7 +54,7 @@
   margin-bottom: 38px;
   text-align: center;
 
-  @media (width >=$tablet-width) {
+  @media (width >=$desktop-width) {
     margin-bottom: 48px;
   }
 }
@@ -61,7 +64,7 @@
   flex-direction: column;
   gap: 4px;
 
-  @media (width >=$tablet-width) {
+  @media (width >=$desktop-width) {
     flex-direction: row;
     justify-content: center;
     gap: 13px;
@@ -72,7 +75,7 @@
   position: relative;
   padding-left: 48px;
 
-  @media (width >=$tablet-width) {
+  @media (width >=$desktop-width) {
     padding: 0;
 
     &:first-child {
@@ -100,7 +103,7 @@
   font-size: 18px;
   line-height: normal;
 
-  @media (width >=$tablet-width) {
+  @media (width >=$desktop-width) {
     position: relative;
     padding-bottom: 38px;
     font-size: 24px;
@@ -117,7 +120,7 @@
 
     background: url("~images/home/sun.svg") no-repeat center center;
 
-    @media (width >=$tablet-width) {
+    @media (width >=$desktop-width) {
       top: auto;
       bottom: 0;
       left: -10px;
@@ -135,7 +138,7 @@
     border-radius: 10px;
     background: rgba(255, 185, 50, .2);
 
-    @media (width >=$tablet-width) {
+    @media (width >=$desktop-width) {
       right: 0;
       bottom: 8px;
       left: auto;

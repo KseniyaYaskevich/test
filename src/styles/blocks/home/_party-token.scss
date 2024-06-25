@@ -229,6 +229,15 @@
   flex-direction: column;
   gap: 16px;
 
+  li {
+    @media (width >=$tablet-width) {
+      width: calc(50% - 8px);
+    }
+    @media (width >=$desktop-width) {
+      width: auto;
+    }
+  }
+
   li>a {
     width: 100%;
     min-height: 50px;
@@ -245,7 +254,7 @@
     font-weight: 700;
     line-height: normal;
 
-    @media (width >=$tablet-width) {
+    @media (width >=$desktop-width) {
       width: auto;
     }
   }

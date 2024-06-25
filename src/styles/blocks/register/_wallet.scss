@@ -1,0 +1,45 @@
+.wallet {
+  text-align: center;
+
+  .register__separator {
+    margin-bottom: 0;
+  }
+}
+
+.wallet__title {
+  margin-bottom: 32px;
+}
+
+.wallet__subtitle {
+  margin-bottom: 8px;
+}
+
+.wallet__desc {
+  margin-bottom: 40px;
+}
+
+.wallet__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.wallet-success__wrapper {
+  max-width: 688px;
+  margin: 0 auto;
+  padding: 24px;
+  border-radius: 20px;
+  background: var(--dark-grey-50, rgba(23, 23, 23, 0.50));
+  backdrop-filter: blur(20px);
+
+  @media(width>=$desktop-width) {
+    padding: 40px 117px;
+  }
+}
+
+.wallet-success__title{
+  margin-bottom: 24px;
+}
+.wallet-success__subtitle{
+  margin-bottom: 32px;
+}

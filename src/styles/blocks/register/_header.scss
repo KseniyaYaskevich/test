@@ -1,0 +1,110 @@
+.page-register {
+
+  main {
+    position: relative;
+    overflow-x: hidden;
+    padding-top: 119px;
+
+    @media(width>=$desktop-width) {
+      padding-top: 130px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: -1;
+
+      transform: translate(-50%, -80%);
+
+      content: "";
+      width: 1950px;
+      height: 1699px;
+      background: radial-gradient(50% 50% at 50% 50%, #77D6FF 0%, rgba(23, 23, 23, 0.00) 100%);
+    }
+
+    
+  }
+}
+
+.header-register__main-nav {
+  &.main-nav {
+    display: none;
+
+    @media(width>=$desktop-width) {
+      display: flex;
+      min-height: auto;
+      gap: 32px;
+      top: 40px;
+    }
+  }
+}
+
+.header-register {
+  margin-bottom: -112px;
+  background: transparent;
+  z-index: 50;
+
+  & .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 27px;
+    padding: 16px 0;
+
+    @media(width>=$desktop-width) {
+      padding: 0;
+      margin: 0;
+    }
+  }
+
+}
+
+.header-register__logo {
+  @media(width>=$desktop-width) {
+    display: none;
+  }
+}
+
+.header-register__back {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transition: color .2s ease-out;
+
+  span {
+    opacity: 0.5;
+    transition: opacity .2s ease-out;
+  }
+
+  & svg {
+    stroke: currentColor;
+  }
+
+  &:hover {
+    color: $color-yellow;
+
+    span {
+      opacity: 1;
+    }
+  }
+
+  &--mobile {
+    @media(width>=$desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    @media(width>=$desktop-width) {
+      display: flex;
+      flex-direction: column;
+      font-family: "Chakra Petch";
+      font-size: 10px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      color: $color-white;
+    }
+  }
+}

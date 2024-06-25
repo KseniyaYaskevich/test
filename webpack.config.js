@@ -17,7 +17,7 @@ const jsLoaders = () => [
 const config = {
   entry: {
     index: ['./src/scripts/index.js', './src/styles/styles.scss'],
-    home: ['./src/scripts/home.js'],
+    // home: ['./src/scripts/home.js'],
     // bootstrap: ['./src/styles/bootstrap/bootstrap.scss'],
   },
   output: {

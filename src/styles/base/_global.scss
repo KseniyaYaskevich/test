@@ -71,6 +71,7 @@ a {
       @media (width >=$tablet-width) {
         max-width: 1156px;
         margin: 0 auto;
+        padding: 0 24px;
       }
     }
   }
@@ -89,6 +90,11 @@ a {
       content: "";
       background: radial-gradient(50% 50% at 50% 50%, rgba(23, 23, 23, 0.10) 0%, #171717 100%), url("~images/bg.jpg") lightgray 50% / cover no-repeat;
     }
+  }
+
+  &.page-register {
+    grid-template-rows: min-content auto;
+    background: #1F1F1F;
   }
 }
 
@@ -128,6 +134,8 @@ a {
   line-height: normal;
 
   cursor: pointer;
+
+  
 
   &--yellow {
     gap: 8px;
@@ -186,7 +194,6 @@ a {
     gap: 8px;
     padding: 8px 40px;
 
-
     font-family: $font-family--petch;
     font-size: 16px;
     font-style: normal;
@@ -208,6 +215,34 @@ a {
       background: #171717;
       box-shadow: 0px 4px 18px 0px rgba(244, 150, 2, 0.5)
     }
+  }
+
+  &--transparent {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    padding: 14.5px 17px;
+
+    border-radius: 14px;
+    border: 1px solid $color-white;
+    background: transparent;
+    color: $color-white;
+
+    font-family: $font-family--petch;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    & svg {
+      fill: currentColor;
+    }
+  }
+
+  &--flex {
+    display: flex;
   }
 }
 
@@ -261,7 +296,8 @@ a {
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
-
+    font-style: normal;
+    
     @media (width >=$tablet-width) {
       font-size: 32px;
     }

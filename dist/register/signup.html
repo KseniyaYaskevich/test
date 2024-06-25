@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css" />
+  <script src="index.js" defer></script>
+</head>
+
+<body class="page-body page-register">
+
+  <header class="header-register">
+    <div class="container">
+      <a class="header-register__logo" href="#!">
+        <img src="images/header/logo.png" alt="Logo image" width="32" height="32">
+      </a>
+      <a class="paragraph paragraph--1-bold header-register__back header-register__back--mobile" href="#!">
+        <svg viewBox="0 0 16 16" width="16" height="16">
+          <use href="images/sprite.svg#Arrow"></use>
+        </svg>
+        <span>
+          Back
+        </span>
+      </a>
+      <nav class="header-register__main-nav main-nav">
+        <a class="page-header__logo" href="#!">
+          <img src="images/header/logo.png" alt="Logo image" width="38" height="38">
+        </a>
+        <a class="paragraph paragraph--1-bold header-register__back header-register__back--desktop" href="#!">
+          <svg viewBox="0 0 24 24" width="24" height="24">
+            <use href="images/sprite.svg#Arrow"></use>
+          </svg>
+          <span>
+            Back
+          </span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="register">
+      <div class="container">
+        <div class="page-register__wrapper">
+          <h2 class="title title--2 register__title">Sign up</h2>
+          <form class="register__form form">
+            <p class="form__title">
+              <span class="paragraph paragraph--1">Already have an account?</span>
+              <a class="paragraph paragraph--1-bold" href="#!">Login</a>
+            </p>
+            <p class="form-floating form__input-control">
+              <input class="form-control paragraph paragraph--2 form__input" type="text" name="nickname" id="nickname"
+                placeholder="Nickname">
+              <label class="paragraph paragraph--2" for="nickname">Nickname</label>
+            </p>
+            <p class="form-floating form__input-control">
+              <input class="form-control paragraph paragraph--2 form__input" type="email" name="email" id="email"
+                placeholder="Email">
+              <label class="paragraph paragraph--2" for="email">Email</label>
+            </p>
+            <p class="form-floating form__input-control">
+              <input class="form-control paragraph paragraph--2 form__input" type="password" name="password"
+                id="password" placeholder="Password">
+              <label class="paragraph paragraph--2" for="password">Password</label>
+              <button class="button form__input-button" type="button">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  <use href="images/sprite.svg#Eye-on"></use>
+                </svg>
+              </button>
+            </p>
+            <p class="form-floating form__input-control">
+              <input class="form-control paragraph paragraph--2 form__input" type="password" name="confirm-password"
+                id="confirm-password" placeholder="Confirm password">
+              <label class="paragraph paragraph--2" for="password">Confirm password</label>
+              <button class="button form__input-button" type="button">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                  <use href="images/sprite.svg#Eye-on"></use>
+                </svg>
+              </button>
+            </p>
+            <p class="form__singup-footer">
+              <label class="form__checkbox-label" for="privacy-policy">
+                <input class="form__checkbox" type="checkbox" name="checkbox-policy" id="privacy-policy">
+                <span class="form__checkbox-custom"></span>
+                <span class="paragraph paragraph--2 form__checkbox-text">I have read and agree to the Artyfact <a
+                    href="#!">Terms of Use</a> and <a href="#!">Privacy Policy</a>.</span>
+              </label>
+              <label class="form__checkbox-label" for="newsletter">
+                <input class="form__checkbox" type="checkbox" name="checkbox-newsletter" id="newsletter">
+                <span class="form__checkbox-custom"></span>
+                <span class="paragraph paragraph--2 form__checkbox-text">I agree to receive campaigns, periodic updates,
+                  and events from Artyfact.</span>
+              </label>
+            </p>
+            <input class="button button--yellow" type="submit" value="Sign up">
+          </form>
+          <div class="register__separator">
+            <p class="dotted-line"></p>
+            <p class="paragraph paragraph--2 register__separator-text">Or sign up with</p>
+            <p class="dotted-line"></p>
+          </div>
+          <div class="register__buttons">
+            <a href="#!" class="button button--transparent">
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <use href="images/sprite.svg#Discord"></use>
+              </svg>
+              Discord
+            </a>
+            <a href="#!" class="button button--transparent">
+              <svg viewBox="0 0 24 24" width="24" height="24">
+                <use href="images/sprite.svg#Epic-games"></use>
+              </svg>
+              Epic
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+</body>
+
+</html>
