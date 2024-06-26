@@ -54,23 +54,25 @@ var search = function search() {
 };
 ;// CONCATENATED MODULE: ./src/scripts/modules/hoverVideo.js
 var hoverVideo = function hoverVideo() {
-  var singleCard = document.querySelector('.single-card__video');
+  var singleCardVideos = document.querySelectorAll('.single-card__video');
   var cards = document.querySelector('.marketplace__cards');
   var currentElem = null;
-  if (singleCard) {
-    singleCard.pause();
-    singleCard.currentTime = 0;
-    singleCard.addEventListener('mouseover', function () {
-      singleCard.play();
-    });
-    singleCard.addEventListener('mouseout', function () {
-      var playPromise = singleCard.play();
-      if (playPromise !== undefined) {
-        playPromise.then(function () {
-          singleCard.pause();
-          singleCard.currentTime = 0;
-        })["catch"](function () {});
-      }
+  if (singleCardVideos) {
+    singleCardVideos.forEach(function (video) {
+      video.pause();
+      video.currentTime = 0;
+      video.addEventListener('mouseover', function () {
+        video.play();
+      });
+      video.addEventListener('mouseout', function () {
+        var playPromise = video.play();
+        if (playPromise !== undefined) {
+          playPromise.then(function () {
+            video.pause();
+            video.currentTime = 0;
+          })["catch"](function () {});
+        }
+      });
     });
   }
   if (cards) {
@@ -3905,11 +3907,10 @@ var featuresSwiper = function featuresSwiper() {
 
 
 
-var homePage = document.querySelector('.page-home');
 filter();
 search();
 hoverVideo();
-if (homePage) {
+if (document.querySelector('.page-home')) {
   carousels();
   featuresSwiper();
 }

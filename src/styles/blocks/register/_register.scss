@@ -1,6 +1,31 @@
+.page-register {
+  main {
+    position: relative;
+    overflow-x: hidden;
+    padding-top: 119px;
+
+    @media(width>=$desktop-width) {
+      padding-top: 130px;
+    }
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      z-index: -1;
+
+      transform: translate(-50%, -80%);
+
+      content: "";
+      width: 1950px;
+      height: 1699px;
+      background: radial-gradient(50% 50% at 50% 50%, #77D6FF 0%, rgba(23, 23, 23, 0.00) 100%);
+    }
+  }
+}
+
 .page-register__title {
   margin-bottom: 16px;
-  
 }
 
 .page-register__subtitle {

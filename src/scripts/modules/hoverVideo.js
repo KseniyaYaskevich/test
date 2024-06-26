@@ -1,28 +1,31 @@
 export const hoverVideo = () => {
-  const singleCard = document.querySelector('.single-card__video');
+  const singleCardVideos = document.querySelectorAll('.single-card__video');
+
   const cards = document.querySelector('.marketplace__cards');
 
   let currentElem = null;
 
-  if (singleCard) {
-    singleCard.pause();
-    singleCard.currentTime = 0;
+  if (singleCardVideos) {
+    singleCardVideos.forEach((video) => {
+      video.pause();
+      video.currentTime = 0;
 
-    singleCard.addEventListener('mouseover', () => {
-      singleCard.play();
-    });
+      video.addEventListener('mouseover', () => {
+        video.play();
+      });
 
-    singleCard.addEventListener('mouseout', () => {
-      const playPromise = singleCard.play();
+      video.addEventListener('mouseout', () => {
+        const playPromise = video.play();
 
-      if (playPromise !== undefined) {
-        playPromise
-          .then(() => {
-            singleCard.pause();
-            singleCard.currentTime = 0;
-          })
-          .catch(() => {});
-      }
+        if (playPromise !== undefined) {
+          playPromise
+            .then(() => {
+              video.pause();
+              video.currentTime = 0;
+            })
+            .catch(() => {});
+        }
+      });
     });
   }
 

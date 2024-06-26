@@ -17,32 +17,27 @@
     &::before {
       position: absolute;
       top: -53%;
+      top: 0;
       left: 50%;
-      z-index: 0;
+      z-index: -1;
 
-      transform: translateX(-50%);
+      transform: translate(-50%, -80%);
 
       content: "";
       width: 1950px;
       height: 1699px;
 
       @media (width >=768px) {
-        top: -30%;
-
         width: 1436px;
         height: 1251px;
       }
 
       @media (width >=$desktop-width) {
-        top: -70%;
-
         width: 1950px;
         height: 1699px;
       }
 
       @media (width >=$large-width) {
-        top: -60%;
-
         width: 2126px;
         height: 1853px;
       }
@@ -155,7 +150,7 @@
   text-align: center;
   font-variant-numeric: ordinal;
   font-feature-settings: 'ss01' on, 'salt' on, 'ss08' on, 'ss06' on, 'ss03' on, 'ss05' on, 'ss04' on, 'ss09' on, 'clig' off, 'liga' off;
-  font-family: "Chakra Petch";
+  font-family: $font-family--petch;
   font-size: 12px;
   font-style: normal;
   font-weight: 700;
@@ -259,7 +254,6 @@
     width: auto;
     gap: 8px;
   }
-
 }
 
 .single-card__progress {
@@ -391,7 +385,7 @@
     color: var(--Dark-grey, #171717);
     font-variant-numeric: ordinal;
     font-feature-settings: 'ss01' on, 'salt' on, 'ss08' on, 'ss06' on, 'ss03' on, 'ss05' on, 'ss04' on, 'ss09' on, 'clig' off, 'liga' off;
-    font-family: "Chakra Petch";
+    font-family: $font-family--petch;
     font-size: 14px;
     font-style: normal;
     font-weight: 700;

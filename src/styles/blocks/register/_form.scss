@@ -6,8 +6,6 @@
 }
 
 .form__title {
-
-
   & a {
     padding-left: 8px;
     color: $color-yellow;
@@ -27,11 +25,6 @@
 }
 
 .form__input-control {
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
-  // gap: 8px;
-
   border-radius: 14px;
   background: $color-grey--dark-50;
   backdrop-filter: blur(15px);
@@ -85,8 +78,6 @@
 }
 
 .form__input-button {
-
-
   position: absolute;
   right: 16px;
   top: 0;

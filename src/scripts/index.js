@@ -4,13 +4,11 @@ import { hoverVideo } from './modules/hoverVideo';
 import { carousels } from './modules/carousels';
 import { featuresSwiper } from './modules/featuresSwiper';
 
-const homePage = document.querySelector('.page-home');
-
 filter();
 search();
 hoverVideo();
 
-if (homePage) {
+if (document.querySelector('.page-home')) {
   carousels();
   featuresSwiper();
 }
