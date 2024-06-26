@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css" />
+  <script src="index.js" defer></script>
+</head>
+
+<body class="page-body page-register page-policy">
+  <header class="page-header">
+    <div class="container">
+      <a class="page-header__logo hide-mobile" href="#!">
+        <img src="images/header/logo.png" alt="Logo image" width="32" height="32">
+      </a>
+      <div class="page-header__desktop-panel desktop-panel">
+        <ul class="desktop-panel__list">
+          <li>
+            <a class="desktop-panel__link" href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#X"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="desktop-panel__link" href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Discord"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="dropdown">
+            <button class="button dropdown-toggle desktop-panel__link" type="button" data-bs-toggle="dropdown">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Telegram"></use>
+              </svg>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img class="dropdown-item-custom" src="images/flags/group.png" width="20" height="20" alt="flag icon">
+                  Global Telegram Group
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/global.png" width="16" height="16" alt="flag icon">
+                  Global Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/german.png" width="16" height="16" alt="flag icon">
+                  German Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/french.png" width="16" height="16" alt="flag icon">
+                  French Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/korean.png" width="16" height="16" alt="flag icon">
+                  Korean Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/chinese.png" width="16" height="16" alt="flag icon">
+                  Chinese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/russian.png" width="16" height="16" alt="flag icon">
+                  Russian Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/italian.png" width="16" height="16" alt="flag icon">
+                  Italian Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/japanese.png" width="16" height="16" alt="flag icon">
+                  Japanese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/portuguese.png" width="16" height="16" alt="flag icon">
+                  <img src="images/flags/brazilian.png" width="16" height="16" alt="flag icon">
+                  Portuguese and Brazilian Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/turkish.png" width="16" height="16" alt="flag icon">
+                  Turkish Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/vietnamese.png" width="16" height="16" alt="flag icon">
+                  Vietnamese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/spanish.png" width="16" height="16" alt="flag icon">
+                  Spanish Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/arabic.png" width="16" height="16" alt="flag icon">
+                  Arabic Telegram Channel
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="desktop-panel__link" href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="button button--yellow" href="#!">Log in</a>
+      </div>
+      <nav class="page-header__main-nav main-nav">
+        <a class="page-header__logo hide-desktop" href="#!">
+          <img src="images/header/logo.png" alt="Logo image" width="38" height="38">
+        </a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#!">
+              <img src="images/header/home.svg" width="24" height="24" alt="Home icon">
+              Home
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#!">
+              <img src="images/header/leaders.svg" width="24" height="24" alt="Leaders icon">
+              Leaders
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="#!">
+              <img src="images/header/market.svg" width="24" height="24" alt="Market icon">
+              Market
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#!">
+              <img src="images/header/inventory.svg" width="24" height="24" alt="Inventory icon">
+              Inventory
+            </a>
+          </li>
+        </ul>
+        <a class="main-nav__link" href="#!">
+          <img src="images/header/account.svg" width="24" height="24" alt="Account icon">
+          Log in
+        </a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="policy">
+      <div class="container">
+        <h4 class="title title--4 policy__title">Legal notice</h4>
+        <h4 class="title title--5 policy__subtitle">Artyfact’s legal notice</h4>
+        <div class="policy__wrapper">
+          <pre class="paragraph paragraph--1">
+Please read this section titled "Legal Notice" very carefully and in its entirety. If you are in any doubts to the action you should take, you should consult your legal, financial, tax, or other professional advisor(s). By accessing the information set forth in this website or any part hereof, you represent and warrant to Artyfact Ltd. (referred to in this section, "Legal Notice" as "Artyfact") that you unconditionally and irrevocably accept and agree with the following:
+
+</pre>
+          <p class="paragraph paragraph--1-bold">No viewing in a Restricted Territory</p>
+          <pre class="paragraph paragraph--1">
+
+It may not be lawful in certain jurisdictions for individuals, or certain categories of individuals in other jurisdictions, to view this website. An individual who wishes to use this website must first satisfy himself or herself that he or she is not subject to any local requirements that prohibit or restrict him or her from doing so. In particular, unless otherwise determined by Artyfact and permitted by the applicable law and regulations, it is not intended that any offering of the tokens or NFTs mentioned in this website (the "Tokens") by Artyfact should be made or any documentation is sent directly or indirectly, in or into, countries where participating in Initial Coin/Token Offerings are banned due to legal restrictions, and countries sanctioned by the US or countries considered as high risk and monitored by the Financial Action Task Force ("FATF") (each, a "Restricted Territory") and nor should it be accessed by any individual who is a national citizen or resident o fa Restricted Territory, including corporations, partnerships, or other entities created or organized in any such jurisdiction, unless they are exempted from the prohibition against participating in Initial Coin/Token Offerings. Artyfact shall not be responsible for individuals who access this website from territories whose laws prohibit such access or where any part of the website may be illegal. Such individuals do so at their own risk.
+
+</pre>
+          <p class="paragraph paragraph--1-bold">No Offer</p>
+          <pre class="paragraph paragraph--1">
+
+This website is for information purposes only and does not constitute or form, and not intended to be, an offer or solicitation of an offer to buy or sell, subscribe for, underwrite or purchase any form of investment or securities or other financial instruments, nor shall it or any part of it form the basis of, or be relied upon, in any way in connection with any contract or investment decision relating to the same. No regulatory authority has examined or approved any of the information set out in this website. No such action has been or will be taken under the laws, regulatory requirements, or rules of any jurisdiction.
+Information
+
+All information is provided without any warranties of any kind, and Artyfact, its employees, officers, and/or advisors make no representations and disclaim al express and implied warranties and conditions of any kind, and each of Artyfact, its employees, officers, and/ or professional advisors assume no responsibility or liability to you or any third party for the consequence of reliance on such information, errors or omissions in such information or any action resulting therefrom.
+The information contained in this website may contain statements that are deemed to be forward-looking statements", which are prospective in nature and are not statements of historical facts. Some of these statements can be identified by forward-looking terms such as "aim", "target", "anticipate", "believe", "could","estimate", "expect", "expected", "potential", "if", "intend", "may", "plan", "possible", "probable", "project", "should", “would", "will" or other similar terms. However, these terms are not exhaustive. Forward-looking statements inherently contain risks and uncertainties as they relate to events or circumstances in the future.
+
+Therefore, the information, opinions, and forward-looking statements, including estimates and projections, in this website in respect of the anticipated roadmaps, development, and projected terms and performance of the relevant entities are selective and subject to updating, expansion, revision, independent verification, and amendment. Artyfact is not making any representation or warranty or undertaking, including those in relation to the truth, accuracy, and completeness of any of the information set out in this paper. Artyfact also expressly disclaims any obligation or undertaking to update or revise any forward-looking statements except to the extent required by law and neither Artyfact, its employees, officers, or professional advisors make any assurance, representation, or guarantee that any event referred to in a forward-looking statement will actually occur.
+
+Whilst Artyfact intends to fulfill al the goals set out in website, in case of unforeseen circumstances, the goals may change or may not be achieved without any notice to you.
+
+</pre>
+          <p class="paragraph paragraph--1-bold">No Advice</p>
+          <pre class="paragraph paragraph--1">
+
+None of the contents of this website constitutes legal, financial, tax, or other advice. You must conduct your own due diligence and ensure you comply with all local laws regarding cryptocurrency, tax, securities, and other regulations in your jurisdiction. We encourage you to consult with the relevant professional advisor independently.
+
+</pre>
+          <p class="paragraph paragraph--1-bold">Regulatory risks</p>
+          <pre class="paragraph paragraph--1">
+
+The regulatory status of cryptographic tokens, including any digital currency, digital assets, and blockchain applications, is unclear or unsettled in many jurisdictions. The creation of this website do not imply that any relevant laws, regulations, and rules have been complied with. No regulatory authority has examined or approved this website. Where any relevant governmental authority makes changes to existing laws, regulations, and/or rules, or where financial institutions make certain commercial decisions, ti may have a material adverse effect and / or impair the ability of any relevant entity referred to in the website to function as intended, or at all.
+
+</pre>
+          <p class="paragraph paragraph--1-bold">No Agreement</p>
+          <pre class="paragraph paragraph--1">
+
+This website shall not be relied on to enter into any contract or to form the basis of any investment decision.
+Advertisement and Distribution
+
+The publication of this website does not imply that the applicable laws, regulatory requirements, or rules have been complied with. This website is for general information purposes only and is not an advertisement, nor is it intended to be used to call for an offer on behalf of Artyfact. Publication of this website may be restricted or prohibited by law or regulatory authority in your jurisdiction. Disclaimer and Liability
+
+In no event shall either Artyfact, or any of their respective current or former employees, officers, directors, partners, trustees, representatives, agents, advisors, contractors, or volunteers be liable for any indirect, special, incidental, consequential or other losses of any kind, in tort, contract or otherwise (including but not limited to loss of revenue, income or profits, and loss of use or data), arising out of or in connection with: (i) any acceptance of or reliance on this website or any part thereof by you; (ii) any failure by Artyfact, or any of their affiliate companies, partners, or third party contractors or licensors to deliver or realize all or any part of the project described in or envisaged in this website; (iii) any information contained in or omitted from this website; (iv) your use or inability to use at any time the services or products or Tokens offered by Artyfact, (v) mistakes or errors in code, text, or images involved in the Token sale, or in this website; or (vi) any expectation, promise, representation or warranty arising (or purportedly arising) from this website; (vi) the purchase, use, sale, resale, redemption, or otherwise of the Tokens; or (vii) the volatility in pricing of tokens in any countries and / or on any exchange or market (regulated, unregulated, primary, secondary or otherwise); (ix) any security risk or security breach or security threat or security attack or any theft or loss of data including but not limited to hacker attacks, losses of password, losses of private keys, or anything similar; and your failure to properly secure any private key to a wallet containing Tokens.
+
+</pre>
+          <p class="paragraph paragraph--1-bold">Other Disclaimers</p>
+          <pre class="paragraph paragraph--1">
+
+There are risks involved in the technologies relating to the blockchain technology referred to herein, the Tokens, and the Initial Coin/Token Offering, such as unforeseen bugs, security issues, or disruptions. By way of the above and other factors not within our control, the entire sum used to purchase the Tokens may be lost. Despite our best efforts, Artyfact may not be able to execute or implement its goals, business strategies, and plans. Certain proposed activities and functions described in the Website may require obtaining further regulatory or licensing approval from relevant authorities, which may be protracted, incur significant costs, or be denied completely. In such an event, the proposed features and functions herein may never come to fruition as intended.
+
+There may be changes in political, social, economic, and stock or cryptocurrency market conditions, and/or there may be no or little acceptance/adoption of the relevant Blockchain system and/or Tokens, such that the relevant Blockchain system and/or the Tokens become no longer commercially viable. If any provision or part of any provision in this section titled "Legal Notice" is or becomes invalid, illegal, or unenforceable. It shall be deemed modified to the minimum extent necessary to make it valid, legal, and enforceable. If such modification is not possible, the relevant provision or part-provision shall be deemed deleted. Any modification to or deletion of a provision or part of any provision under this section titled "Legal Notice" shall not affect the validity and enforceability of the rest of this section titled "Legal Notice".
+
+To the fullest extent possible, Artyfact shall not be liable for any responsibility, liability, claims, demands, and/or damages (actual and consequential) of every kind and nature, known and unknown (including, but not limited to, claims of negligence), arising out of or related to any acceptance or reliance on the information set forth in this website by you. Where references have been made to third-party websites or sources of information, we may not have sought further verification as to the accuracy, completeness, or timeliness of the information referred to therein, and no warranties whatsoever are made as to the same. The disclaimers set out above are not exhaustive.
+</pre>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row row-cols-md-2 row-cols-lg-1 page-footer__token">
+        <div class="page-footer__token-heading">
+          <h3 class="title title--3">$ARTY Token</h3>
+          <p class="paragraph paragraph--1">Current price: <span>$1.75</span></p>
+        </div>
+        <div class="page-footer__token-content">
+          <p class="paragraph paragraph--2">Available on:</p>
+          <ul class="row row-cols-2 page-footer__partners">
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/okx.svg" alt="Logo icon">
+              </a></li>
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/Kucoin.svg" alt="Logo icon">
+              </a></li>
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/Bybit.svg" alt="Logo icon">
+              </a></li>
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/htx.svg" alt="Logo icon">
+              </a></li>
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/Gate.svg" alt="Logo icon">
+              </a></li>
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/bitget.svg" alt="Logo icon">
+              </a></li>
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/mexc.svg" alt="Logo icon">
+              </a></li>
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/pancakeswap.svg" alt="Logo icon">
+              </a></li>
+          </ul>
+          <p class="page-footer__token-copyright paragraph paragraph--3">Copyright © 2024 Artyfact Ltd. All rights
+            reserved</p>
+        </div>
+      </div>
+      <div class="page-footer__nav">
+        <div class="row row-cols-2 row-cols-md-4 page-footer__lists">
+          <ul class="col">
+            <li><a href="#!">Homepage</a></li>
+            <li><a href="#!">Leaders</a></li>
+            <li><a href="#!">Marketplace</a></li>
+            <li><a href="#!">Inventory</a></li>
+            <li><a href="#!">About us</a></li>
+            <li><a href="#!">News</a></li>
+          </ul>
+          <ul class="col">
+            <li><a href="#!">Contact us</a></li>
+            <li><a href="#!">Whitepaper</a></li>
+            <li><a href="#!">Roadmap</a></li>
+            <li><a href="#!">Marketing</a></li>
+            <li><a href="#!">Staking</a></li>
+            <li><a href="#!">Claim Portal</a></li>
+          </ul>
+          <ul class="col">
+            <li><a href="#!">Privacy Policy</a></li>
+            <li><a href="#!">Terms of Use</a></li>
+            <li><a href="#!">Legal Notice</a></li>
+          </ul>
+          <div class="col page-footer__address">
+            <p>Registered ofice:</p>
+            <p>Trust Company Complex</p>
+            <p>Ajeltake Island</p>
+            <p>P.O. Box 1405</p>
+            <p>Majuro</p>
+            <p>MH 96960</p>
+            <p>Marshall Islands</p>
+          </div>
+        </div>
+        <div class="page-footer__pay">
+          <p class="page-footer__title">
+            <img src="images/footer/BNB.svg" width="20" height="20" alt="BNB icon">
+            <span>$ARTY Contract Address:</span>
+          </p>
+          <p class="page-footer__code">0x617Cab4aAae1f8dfb3eE138698330776a1e1b324</p>
+          <a class="button button--yellow" href="#!">BscScan</a>
+        </div>
+        <ul class="page-footer__socials">
+          <li><a href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#X"></use>
+              </svg>
+            </a></li>
+          <li><a href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Discord"></use>
+              </svg>
+            </a></li>
+          <li class="dropdown">
+            <a class="button dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Telegram"></use>
+              </svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Global Telegram Group</a></li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/global.png" width="16" height="16" alt="flag icon">
+                  Global Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/german.png" width="16" height="16" alt="flag icon">
+                  German Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/french.png" width="16" height="16" alt="flag icon">
+                  French Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/korean.png" width="16" height="16" alt="flag icon">
+                  Korean Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/chinese.png" width="16" height="16" alt="flag icon">
+                  Chinese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/russian.png" width="16" height="16" alt="flag icon">
+                  Russian Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/italian.png" width="16" height="16" alt="flag icon">
+                  Italian Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/japanese.png" width="16" height="16" alt="flag icon">
+                  Japanese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/portuguese.png" width="16" height="16" alt="flag icon">
+                  <img src="images/flags/brazilian.png" width="16" height="16" alt="flag icon">
+                  Portuguese and Brazilian Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/turkish.png" width="16" height="16" alt="flag icon">
+                  Turkish Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/vietnamese.png" width="16" height="16" alt="flag icon">
+                  Vietnamese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/spanish.png" width="16" height="16" alt="flag icon">
+                  Spanish Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/arabic.png" width="16" height="16" alt="flag icon">
+                  Arabic Telegram Channel
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Instagram"></use>
+              </svg>
+            </a></li>
+          <li><a href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Facebook"></use>
+              </svg>
+            </a></li>
+          <li><a href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Youtube"></use>
+              </svg>
+            </a></li>
+        </ul>
+        <p class="page-footer__copyright hide-mobile">Copyright © 2024 Artyfact Ltd. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

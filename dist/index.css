@@ -7459,4 +7459,94 @@ pre {
   }
 }
 
+.policy__table {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+@media (min-width: 1440px) {
+  .policy__table {
+    margin-bottom: 47px;
+  }
+}
+
+.policy__mobile-table {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding: 20px 16px;
+  border-radius: 12px;
+  border: 1px solid #3D3D3D;
+}
+@media (min-width: 1440px) {
+  .policy__mobile-table {
+    display: none;
+  }
+}
+.policy__mobile-table .line {
+  height: 1px;
+  width: calc(100% + 32px);
+  background: #3D3D3D;
+  margin-left: -16px;
+  margin-right: -16px;
+}
+.policy__mobile-table ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.policy__mobile-table ul > li > p {
+  font-variant-numeric: ordinal;
+  -webkit-font-feature-settings: "ss01" on, "salt" on, "ss08" on, "ss06" on, "ss03" on, "ss05" on, "ss04" on, "ss09" on, "clig" off, "liga" off, "ordn";
+          font-feature-settings: "ss01" on, "salt" on, "ss08" on, "ss06" on, "ss03" on, "ss05" on, "ss04" on, "ss09" on, "clig" off, "liga" off, "ordn";
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.policy__mobile-table ul > li > p:first-child {
+  margin-bottom: 6px;
+  color: #9A9A9A;
+}
+.policy__mobile-table ul > li > p:last-child {
+  color: #FFFFDF;
+}
+
+.policy__desktop-table {
+  display: none;
+  border-radius: 12px;
+  border-collapse: collapse;
+  border: 0.5px solid #3D3D3D;
+  border-collapse: separate;
+  border-spacing: 0;
+  overflow: hidden;
+}
+.policy__desktop-table th,
+.policy__desktop-table td {
+  border: 0.5px solid #3D3D3D;
+  padding: 7px 15px 15px 7px;
+  width: 20%;
+  vertical-align: top;
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+@media (min-width: 1440px) {
+  .policy__desktop-table {
+    display: table;
+  }
+}
+
 /*# sourceMappingURL=index.css.map*/
