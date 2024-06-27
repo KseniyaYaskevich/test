@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css" />
+  <script src="index.js" defer></script>
+</head>
+
+<body class="page-body page-profile">
+
+  <header class="page-header">
+    <div class="container">
+      <a class="page-header__logo hide-mobile" href="#!">
+        <img src="images/header/logo.png" alt="Logo image" width="32" height="32">
+      </a>
+      <div class="page-header__desktop-panel desktop-panel">
+        <ul class="desktop-panel__list">
+          <li>
+            <a class="desktop-panel__link" href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#X"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="desktop-panel__link" href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Discord"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="dropdown">
+            <button class="button dropdown-toggle desktop-panel__link" type="button" data-bs-toggle="dropdown">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Telegram"></use>
+              </svg>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img class="dropdown-item-custom" src="images/flags/group.png" width="20" height="20" alt="flag icon">
+                  Global Telegram Group
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/global.png" width="16" height="16" alt="flag icon">
+                  Global Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/german.png" width="16" height="16" alt="flag icon">
+                  German Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/french.png" width="16" height="16" alt="flag icon">
+                  French Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/korean.png" width="16" height="16" alt="flag icon">
+                  Korean Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/chinese.png" width="16" height="16" alt="flag icon">
+                  Chinese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/russian.png" width="16" height="16" alt="flag icon">
+                  Russian Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/italian.png" width="16" height="16" alt="flag icon">
+                  Italian Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/japanese.png" width="16" height="16" alt="flag icon">
+                  Japanese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/portuguese.png" width="16" height="16" alt="flag icon">
+                  <img src="images/flags/brazilian.png" width="16" height="16" alt="flag icon">
+                  Portuguese and Brazilian Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/turkish.png" width="16" height="16" alt="flag icon">
+                  Turkish Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/vietnamese.png" width="16" height="16" alt="flag icon">
+                  Vietnamese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/spanish.png" width="16" height="16" alt="flag icon">
+                  Spanish Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/arabic.png" width="16" height="16" alt="flag icon">
+                  Arabic Telegram Channel
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="desktop-panel__link" href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="button button--yellow" href="#!">Log in</a>
+      </div>
+      <nav class="page-header__main-nav main-nav">
+        <a class="page-header__logo hide-desktop" href="#!">
+          <img src="images/header/logo.png" alt="Logo image" width="38" height="38">
+        </a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#!">
+              <img src="images/header/home.svg" width="24" height="24" alt="Home icon">
+              Home
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link main-nav__link--active" href="#!">
+              <img src="images/header/leaders.svg" width="24" height="24" alt="Leaders icon">
+              Leaders
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#!">
+              <img src="images/header/market.svg" width="24" height="24" alt="Market icon">
+              Market
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#!">
+              <img src="images/header/inventory.svg" width="24" height="24" alt="Inventory icon">
+              Inventory
+            </a>
+          </li>
+        </ul>
+        <a class="main-nav__link" href="#!">
+          <img src="images/header/account.svg" width="24" height="24" alt="Account icon">
+          Log in
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="leaderboard">
+      <div class="container">
+        <h2 class="title title--2 leaderboard__title">Leaderboard</h2>
+        <div class="leaderboard__wrapper">
+          <div class="leaderboard__info">
+            <div class="leaderboard__info-heading">
+              <div class="leaderboard__image-wrapper">
+                <img class="leaderboard__image" src="images/leaderboard/user.jpg" width="80" height="80">
+              </div>
+              <p class="paragraph paragraph--1-bold leaderboard__user">oleg.boytsov</p>
+              <h5 class="title title--5 leaderboard__text">Your position:</h5>
+              <h2 class="title title--2 leaderboard__position">12</h2>
+            </div>
+            <div class="leaderboard__info-desc">
+              <p class="paragraph paragraph--1-bold leaderboard__info-title">How to increase your rank?</p>
+              <p class="paragraph paragraph--2 leaderboard__info-text">In order to increase your rank you need more wins, hits and eliminations of opponents in Artyfact.</p>
+              <a class="button button--yellow" href="#!">Download Artyfact</a>
+            </div>
+          </div>
+          <div class="leaderboard__table">
+            <table>
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Player name</th>
+                  <th>Score</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>oleg.boytsov</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>oleg.boytsov</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>oleg.boytsov</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>oleg.boytsov</td>
+                  <td>18</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td><span class="paragraph paragraph--1-bold leaderboard__table-user">You: </span>oleg.boytsov</td>
+                  <td>18</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row row-cols-md-2 row-cols-lg-1 page-footer__token">
+        <div class="page-footer__token-heading">
+          <h3 class="title title--3">$ARTY Token</h3>
+          <p class="paragraph paragraph--1">Current price: <span>$1.75</span></p>
+        </div>
+        <div class="page-footer__token-content">
+          <p class="paragraph paragraph--2">Available on:</p>
+          <ul class="row row-cols-2 page-footer__partners">
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/okx.svg" alt="Logo icon">
+              </a></li>
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/Kucoin.svg" alt="Logo icon">
+              </a></li>
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/Bybit.svg" alt="Logo icon">
+              </a></li>
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/htx.svg" alt="Logo icon">
+              </a></li>
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/Gate.svg" alt="Logo icon">
+              </a></li>
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/bitget.svg" alt="Logo icon">
+              </a></li>
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/mexc.svg" alt="Logo icon">
+              </a></li>
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/pancakeswap.svg" alt="Logo icon">
+              </a></li>
+          </ul>
+          <p class="page-footer__token-copyright paragraph paragraph--3">Copyright © 2024 Artyfact Ltd. All rights
+            reserved</p>
+        </div>
+      </div>
+      <div class="page-footer__nav">
+        <div class="row row-cols-2 row-cols-md-4 page-footer__lists">
+          <ul class="col">
+            <li><a href="#!">Homepage</a></li>
+            <li><a href="#!">Leaders</a></li>
+            <li><a href="#!">Marketplace</a></li>
+            <li><a href="#!">Inventory</a></li>
+            <li><a href="#!">About us</a></li>
+            <li><a href="#!">News</a></li>
+          </ul>
+          <ul class="col">
+            <li><a href="#!">Contact us</a></li>
+            <li><a href="#!">Whitepaper</a></li>
+            <li><a href="#!">Roadmap</a></li>
+            <li><a href="#!">Marketing</a></li>
+            <li><a href="#!">Staking</a></li>
+            <li><a href="#!">Claim Portal</a></li>
+          </ul>
+          <ul class="col">
+            <li><a href="#!">Privacy Policy</a></li>
+            <li><a href="#!">Terms of Use</a></li>
+            <li><a href="#!">Legal Notice</a></li>
+          </ul>
+          <div class="col page-footer__address">
+            <p>Registered ofice:</p>
+            <p>Trust Company Complex</p>
+            <p>Ajeltake Island</p>
+            <p>P.O. Box 1405</p>
+            <p>Majuro</p>
+            <p>MH 96960</p>
+            <p>Marshall Islands</p>
+          </div>
+        </div>
+        <div class="page-footer__pay">
+          <p class="page-footer__title">
+            <img src="images/footer/BNB.svg" width="20" height="20" alt="BNB icon">
+            <span>$ARTY Contract Address:</span>
+          </p>
+          <p class="page-footer__code">0x617Cab4aAae1f8dfb3eE138698330776a1e1b324</p>
+          <a class="button button--yellow" href="#!">BscScan</a>
+        </div>
+        <ul class="page-footer__socials">
+          <li><a href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#X"></use>
+              </svg>
+            </a></li>
+          <li><a href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Discord"></use>
+              </svg>
+            </a></li>
+          <li class="dropdown">
+            <a class="button dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Telegram"></use>
+              </svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Global Telegram Group</a></li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/global.png" width="16" height="16" alt="flag icon">
+                  Global Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/german.png" width="16" height="16" alt="flag icon">
+                  German Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/french.png" width="16" height="16" alt="flag icon">
+                  French Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/korean.png" width="16" height="16" alt="flag icon">
+                  Korean Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/chinese.png" width="16" height="16" alt="flag icon">
+                  Chinese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/russian.png" width="16" height="16" alt="flag icon">
+                  Russian Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/italian.png" width="16" height="16" alt="flag icon">
+                  Italian Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/japanese.png" width="16" height="16" alt="flag icon">
+                  Japanese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/portuguese.png" width="16" height="16" alt="flag icon">
+                  <img src="images/flags/brazilian.png" width="16" height="16" alt="flag icon">
+                  Portuguese and Brazilian Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/turkish.png" width="16" height="16" alt="flag icon">
+                  Turkish Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/vietnamese.png" width="16" height="16" alt="flag icon">
+                  Vietnamese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/spanish.png" width="16" height="16" alt="flag icon">
+                  Spanish Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/arabic.png" width="16" height="16" alt="flag icon">
+                  Arabic Telegram Channel
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Instagram"></use>
+              </svg>
+            </a></li>
+          <li><a href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Facebook"></use>
+              </svg>
+            </a></li>
+          <li><a href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Youtube"></use>
+              </svg>
+            </a></li>
+        </ul>
+        <p class="page-footer__copyright hide-mobile">Copyright © 2024 Artyfact Ltd. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
