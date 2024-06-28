@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="index.css" />
+  <script src="index.js" defer></script>
+</head>
+
+<body class="page-body page-profile">
+
+  <header class="page-header">
+    <div class="container">
+      <a class="page-header__logo hide-mobile" href="#!">
+        <img src="images/header/logo.png" alt="Logo image" width="32" height="32">
+      </a>
+      <div class="page-header__desktop-panel desktop-panel">
+        <ul class="desktop-panel__list">
+          <li>
+            <a class="desktop-panel__link" href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#X"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a class="desktop-panel__link" href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Discord"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="dropdown">
+            <button class="button dropdown-toggle desktop-panel__link" type="button" data-bs-toggle="dropdown">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Telegram"></use>
+              </svg>
+            </button>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img class="dropdown-item-custom" src="images/flags/group.png" width="20" height="20" alt="flag icon">
+                  Global Telegram Group
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/global.png" width="16" height="16" alt="flag icon">
+                  Global Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/german.png" width="16" height="16" alt="flag icon">
+                  German Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/french.png" width="16" height="16" alt="flag icon">
+                  French Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/korean.png" width="16" height="16" alt="flag icon">
+                  Korean Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/chinese.png" width="16" height="16" alt="flag icon">
+                  Chinese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/russian.png" width="16" height="16" alt="flag icon">
+                  Russian Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/italian.png" width="16" height="16" alt="flag icon">
+                  Italian Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/japanese.png" width="16" height="16" alt="flag icon">
+                  Japanese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/portuguese.png" width="16" height="16" alt="flag icon">
+                  <img src="images/flags/brazilian.png" width="16" height="16" alt="flag icon">
+                  Portuguese and Brazilian Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/turkish.png" width="16" height="16" alt="flag icon">
+                  Turkish Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/vietnamese.png" width="16" height="16" alt="flag icon">
+                  Vietnamese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/spanish.png" width="16" height="16" alt="flag icon">
+                  Spanish Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/arabic.png" width="16" height="16" alt="flag icon">
+                  Arabic Telegram Channel
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="desktop-panel__link" href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Instagram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <a class="button button--yellow" href="#!">Log in</a>
+      </div>
+      <nav class="page-header__main-nav main-nav">
+        <a class="page-header__logo hide-desktop" href="#!">
+          <img src="images/header/logo.png" alt="Logo image" width="38" height="38">
+        </a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#!">
+              <img src="images/header/home.svg" width="24" height="24" alt="Home icon">
+              Home
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#!">
+              <img src="images/header/leaders.svg" width="24" height="24" alt="Leaders icon">
+              Leaders
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#!">
+              <img src="images/header/market.svg" width="24" height="24" alt="Market icon">
+              Market
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#!">
+              <img src="images/header/inventory.svg" width="24" height="24" alt="Inventory icon">
+              Inventory
+            </a>
+          </li>
+        </ul>
+        <a class="main-nav__link" href="#!">
+          <img src="images/header/account.svg" width="24" height="24" alt="Account icon">
+          Log in
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="profile">
+      <div class="container">
+        <div class="profile__heading">
+          <h2 class="title title--2 profile__title">Profile</h2>
+          <div class="profile__img-wrapper">
+            <img class="profile__img hide" src="images/leaderboard/user.jpg" width="80" height="80">
+            <p class="profile__img-text">ob</p>
+          </div>
+        </div>
+        <div class="profile__header">
+          <button class="button profile__header-tab active" type="button">Settings</button>
+          <button class="button profile__header-tab" type="button">Transactions</button>
+        </div>
+        <div class="profile__tab active">
+          <div class="profile-settings">
+            <div class="profile-settings__left-column">
+              <h5 class="title title--5 profile-settings__title">Personal information</h5>
+              <form class="form form-info">
+                <p class="form-floating form__input-control">
+                  <input class="form-control paragraph paragraph--2 form__input" type="text" name="nickname" id="name"
+                    placeholder="Name">
+                  <label class="paragraph paragraph--2" for="name">Name</label>
+                </p>
+                <p class="form-floating form__input-control">
+                  <input class="form-control paragraph paragraph--2 form__input" type="text" name="nickname"
+                    id="nickname" placeholder="Nickname">
+                  <label class="paragraph paragraph--2" for="nickname">Nickname</label>
+                </p>
+                <p class="form-floating form__input-control">
+                  <input class="form-control paragraph paragraph--2 form__input" type="email" name="email" id="email"
+                    placeholder="Your email">
+                  <label class="paragraph paragraph--2" for="email">Your email</label>
+                </p>
+                <p class="form-floating form__input-control">
+                  <textarea class="form-control paragraph paragraph--2 form__input form__input--textarea" name="bio"
+                    id="bio" rows="4" cols="50" placeholder="Bio"></textarea>
+                  <label class="paragraph paragraph--2" for="bio">Bio</label>
+                </p>
+                <input class="button profile-settings__button disabled" type="submit" value="Update">
+              </form>
+            </div>
+            <div class="profile-settings__right-column">
+              <h5 class="title title--5 form-password__title">Update password</h5>
+              <form class="form form-password">
+                <p class="form__title">
+                  <span class="paragraph paragraph--1">Pleasy type current password and set new password</span>
+                </p>
+                <p class="form-floating form__input-control">
+                  <input class="form-control paragraph paragraph--2 form__input" type="password" name="password"
+                    id="current-password" placeholder="Current Password">
+                  <label class="paragraph paragraph--2" for="current-password">Current Password</label>
+                  <button class="button form__input-button" type="button">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                      <use href="images/sprite.svg#Eye-on"></use>
+                    </svg>
+                  </button>
+                </p>
+                <p class="form-floating form__input-control">
+                  <input class="form-control paragraph paragraph--2 form__input" type="password" name="new-password"
+                    id="new-password" placeholder="New password">
+                  <label class="paragraph paragraph--2" for="new-password">New password</label>
+                  <button class="button form__input-button" type="button">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                      <use href="images/sprite.svg#Eye-on"></use>
+                    </svg>
+                  </button>
+                </p>
+                <p class="form-floating form__input-control">
+                  <input class="form-control paragraph paragraph--2 form__input" type="password" name="confirm-password"
+                    id="confirm-password" placeholder="Confirm new password">
+                  <label class="paragraph paragraph--2" for="confirm-password">Confirm new password</label>
+                  <button class="button form__input-button" type="button">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                      <use href="images/sprite.svg#Eye-on"></use>
+                    </svg>
+                  </button>
+                </p>
+                <input class="button profile-settings__button disabled" type="submit" value="Update">
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="profile__tab">
+          <div class="profile-transactions">
+            <div class="profile-transactions__heading">
+              <div class="profile-transactions__refresh">
+                <h5 class="title title--5 profile-transactions__title">My transactions</h5>
+                <a href="#!"><img src="images/profile/Refresh.svg" width="24" height="24"></a>
+              </div>
+              <form class="profile-transactions__search">
+                <div class="profile-transactions__search-control">
+                  <button type="button"
+                    class="button profile-transactions__search-button profile-transactions__search-button--search"
+                    aria-label="Search submit button">
+                    <img src="images/marketplace/search.svg" alt="Search icon" width="24" height="24">
+                  </button>
+                  <input class="profile-transactions__input" type="search" name="search" id="search"
+                    placeholder="Search by Edition Name">
+                </div>
+              </form>
+              <div class="profile-transactions__sort">
+                <p class="paragraph paragraph--1">Sort by:</p>
+                <p class="marketplace-sort__select-control">
+                  <select class="marketplace-sort__select" name="sort" id="sort-prices">
+                    <option value="prices" selected="selected">Prices</option>
+                    <option value=""></option>
+                  </select>
+                </p>
+                <p class="marketplace-sort__select-control">
+                  <select class="marketplace-sort__select" name="sort" id="sort-ascending">
+                    <option value="ascending" selected="selected">Ascending</option>
+                    <option value=""></option>
+                  </select>
+                </p>
+              </div>
+              <div class="dotted-line"></div>
+            </div>
+            <div class="profile-transactions__mobile-tables">
+              <ul class="profile-transactions__mobile-table mobile-table">
+                <li>
+                  <p class="paragraph paragraph--2">Order No.</p>
+                  <p class="paragraph paragraph--1-bold">AT1295</p>
+                </li>
+                <li>
+                  <p class="paragraph paragraph--2">Edition No.</p>
+                  <p class="paragraph paragraph--1-bold">3</p>
+                </li>
+                <li>
+                  <p class="paragraph paragraph--2">Edition Name</p>
+                  <p class="paragraph paragraph--1-bold">Glitch Gorilla</p>
+                </li>
+                <li>
+                  <p class="paragraph paragraph--2">Purchase Type</p>
+                  <p class="paragraph paragraph--1-bold">Primary</p>
+                </li>
+                <li>
+                  <p class="paragraph paragraph--2">Price & Currency Type</p>
+                  <p class="paragraph paragraph--1-bold">20 (ARTY)</p>
+                </li>
+                <li>
+                  <p class="paragraph paragraph--2">Company Commission</p>
+                  <p class="paragraph paragraph--1-bold">-</p>
+                </li>
+                <li>
+                  <p class="paragraph paragraph--2">Payment Mode</p>
+                  <p class="paragraph paragraph--1-bold">Internal</p>
+                </li>
+                <li>
+                  <p class="paragraph paragraph--2">Payment Status</p>
+                  <p class="paragraph paragraph--1-bold">Success</p>
+                </li>
+                <li>
+                  <p class="paragraph paragraph--2">Check Status</p>
+                  <p class="paragraph paragraph--1-bold">-</p>
+                </li>
+                <li>
+                  <a class="button button--transparent button--flex" href="#!">View on blockchain</a>
+                </li>
+              </ul>
+              <div class="dotted-line"></div>
+              <ul class="profile-transactions__mobile-table mobile-table">
+                <li>
+                  <p class="paragraph paragraph--2">Order No.</p>
+                  <p class="paragraph paragraph--1-bold">AT1295</p>
+                </li>
+                <li>
+                  <p class="paragraph paragraph--2">Edition No.</p>
+                  <p class="paragraph paragraph--1-bold">3</p>
+                </li>
+                <li>
+                  <p class="paragraph paragraph--2">Edition Name</p>
+                  <p class="paragraph paragraph--1-bold">Glitch Gorilla</p>
+                </li>
+                <li>
+                  <p class="paragraph paragraph--2">Purchase Type</p>
+                  <p class="paragraph paragraph--1-bold">Primary</p>
+                </li>
+                <li>
+                  <p class="paragraph paragraph--2">Price & Currency Type</p>
+                  <p class="paragraph paragraph--1-bold">20 (ARTY)</p>
+                </li>
+                <li>
+                  <p class="paragraph paragraph--2">Company Commission</p>
+                  <p class="paragraph paragraph--1-bold">-</p>
+                </li>
+                <li>
+                  <p class="paragraph paragraph--2">Payment Mode</p>
+                  <p class="paragraph paragraph--1-bold">Internal</p>
+                </li>
+                <li>
+                  <p class="paragraph paragraph--2">Payment Status</p>
+                  <p class="paragraph paragraph--1-bold">Success</p>
+                </li>
+                <li>
+                  <p class="paragraph paragraph--2">Check Status</p>
+                  <p class="paragraph paragraph--1-bold">-</p>
+                </li>
+                <li>
+                  <a class="button button--transparent button--flex" href="#!">View on blockchain</a>
+                </li>
+              </ul>
+            </div>
+            <table class="profile-transactions__desktop-table">
+              <thead>
+                <tr>
+                  <th>
+                    <p>Order</p>
+                    <p>No.</p>
+                  </th>
+                  <th>
+                    <p>Edition</p>
+                    <p>No.</p>
+                  </th>
+                  <th>
+                    <p>Edition</p>
+                    <p>Name</p>
+                  </th>
+                  <th>
+                    <p>Purchase</p>
+                    <p>Type</p>
+                  </th>
+                  <th>
+                    <p>Price &</p>
+                    <p>Currency Type</p>
+                  </th>
+                  <th>
+                    <p>Company</p>
+                    <p>Commission</p>
+                  </th>
+                  <th>
+                    <p>Payment</p>
+                    <p>Mode</p>
+                  </th>
+                  <th>
+                    <p>Payment</p>
+                    <p>Status</p>
+                  </th>
+                  <th>
+                    <p>View on</p>
+                    <p>Blockchain</p>
+                  </th>
+                  <th>
+                    <p>Check</p>
+                    <p>Status</p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>AT1295</td>
+                  <td>3</td>
+                  <td>Glitch Gorilla</td>
+                  <td>Primary</td>
+                  <td>20 (ARTY)</td>
+                  <td>-</td>
+                  <td>Internal</td>
+                  <td>Success</td>
+                  <td><a href="#!"><img src="images/profile/Frame.svg" width="24" height="24"></a></td>
+                  <td>-</td>
+                </tr>
+                <tr>
+                  <td>AT1295</td>
+                  <td>3</td>
+                  <td>Glitch Gorilla</td>
+                  <td>Primary</td>
+                  <td>20 (ARTY)</td>
+                  <td>-</td>
+                  <td>Internal</td>
+                  <td>Success</td>
+                  <td><a href="#!"><img src="images/profile/Frame.svg" width="24" height="24"></a></td>
+                  <td>-</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="marketplace-filter__mobile">
+      <p class="marketplace-filter__line"></p>
+      <div class="marketplace-filter__mobile-heading">
+        <h4 class="title title--4">Filter</h4>
+        <div class="marketplace-filter__mobile-buttons">
+          <button class="button marketplace-filter__mobile-reset" type="button">Reset all</button>
+          <button class="button marketplace-filter__mobile-close" type="button">
+            <img src="images/marketplace/close.svg" alt="Close icon">
+          </button>
+        </div>
+      </div>
+      <div class="marketplace-filter__mobile-content">
+        <p class="paragraph paragraph--1-bold">Rarity</p>
+        <p class="marketplace-filter__checkbox-control">
+          <label class="marketplace-filter__checkbox-label" for="checkbox-rarity">
+            <input class="marketplace-filter__checkbox" type="checkbox" name="checkbox-rarity" id="checkbox-rarity">
+            <span class="marketplace-filter__checkbox-custom"></span>
+            <span class="marketplace-filter__checkbox-text paragraph paragraph--2">Any rarity</span>
+            <span class="marketplace-filter__checkbox-count">21</span>
+          </label>
+        </p>
+        <p class="marketplace-filter__checkbox-control">
+          <label class="marketplace-filter__checkbox-label" for="checkbox-epic">
+            <input class="marketplace-filter__checkbox" type="checkbox" name="checkbox-epic" id="checkbox-epic">
+            <span class="marketplace-filter__checkbox-custom"></span>
+            <span class="marketplace-filter__checkbox-text paragraph paragraph--2">Epic</span>
+            <span class="marketplace-filter__checkbox-count">21</span>
+          </label>
+        </p>
+        <p class="marketplace-filter__checkbox-control">
+          <label class="marketplace-filter__checkbox-label" for="checkbox-uncommon">
+            <input class="marketplace-filter__checkbox" type="checkbox" name="checkbox-uncommon" id="checkbox-uncommon">
+            <span class="marketplace-filter__checkbox-custom"></span>
+            <span class="marketplace-filter__checkbox-text paragraph paragraph--2">Uncommon</span>
+            <span class="marketplace-filter__checkbox-count">21</span>
+          </label>
+        </p>
+        <p class="marketplace-filter__checkbox-control">
+          <label class="marketplace-filter__checkbox-label" for="checkbox-rare">
+            <input class="marketplace-filter__checkbox" type="checkbox" name="checkbox-rare" id="checkbox-rare">
+            <span class="marketplace-filter__checkbox-custom"></span>
+            <span class="marketplace-filter__checkbox-text paragraph paragraph--2">Rare</span>
+            <span class="marketplace-filter__checkbox-count">21</span>
+          </label>
+        </p>
+        <p class="dotted-line marketplace-filter__dotted-line"></p>
+        <p class="marketplace-filter__checkbox-control">
+          <label class="marketplace-filter__checkbox-label" for="checkbox-owned-mob">
+            <input class="marketplace-filter__checkbox" type="checkbox" name="checkbox-owned-mob"
+              id="checkbox-owned-mob">
+            <span class="marketplace-filter__checkbox-custom"></span>
+            <span class="marketplace-filter__checkbox-text paragraph paragraph--2">Not owned</span>
+            <span class="marketplace-filter__checkbox-count">21</span>
+          </label>
+        </p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row row-cols-md-2 row-cols-lg-1 page-footer__token">
+        <div class="page-footer__token-heading">
+          <h3 class="title title--3">$ARTY Token</h3>
+          <p class="paragraph paragraph--1-bold">Current price: <span>$1.75</span></p>
+        </div>
+        <div class="page-footer__token-content">
+          <p class="paragraph paragraph--2">Available on:</p>
+          <ul class="row row-cols-2 page-footer__partners">
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/okx.svg" alt="Logo icon">
+              </a></li>
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/Kucoin.svg" alt="Logo icon">
+              </a></li>
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/Bybit.svg" alt="Logo icon">
+              </a></li>
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/htx.svg" alt="Logo icon">
+              </a></li>
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/Gate.svg" alt="Logo icon">
+              </a></li>
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/bitget.svg" alt="Logo icon">
+              </a></li>
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/mexc.svg" alt="Logo icon">
+              </a></li>
+            <li><a class="button button--yellow" href="#!">
+                <img src="images/footer/pancakeswap.svg" alt="Logo icon">
+              </a></li>
+          </ul>
+          <p class="page-footer__token-copyright paragraph paragraph--3">Copyright © 2024 Artyfact Ltd. All rights
+            reserved</p>
+        </div>
+      </div>
+      <div class="page-footer__nav">
+        <div class="row row-cols-2 row-cols-md-4 page-footer__lists">
+          <ul class="col">
+            <li><a href="#!">Homepage</a></li>
+            <li><a href="#!">Leaders</a></li>
+            <li><a href="#!">Marketplace</a></li>
+            <li><a href="#!">Inventory</a></li>
+            <li><a href="#!">About us</a></li>
+            <li><a href="#!">News</a></li>
+          </ul>
+          <ul class="col">
+            <li><a href="#!">Contact us</a></li>
+            <li><a href="#!">Whitepaper</a></li>
+            <li><a href="#!">Roadmap</a></li>
+            <li><a href="#!">Marketing</a></li>
+            <li><a href="#!">Staking</a></li>
+            <li><a href="#!">Claim Portal</a></li>
+          </ul>
+          <ul class="col">
+            <li><a href="#!">Privacy Policy</a></li>
+            <li><a href="#!">Terms of Use</a></li>
+            <li><a href="#!">Legal Notice</a></li>
+          </ul>
+          <div class="col page-footer__address">
+            <p>Registered ofice:</p>
+            <p>Trust Company Complex</p>
+            <p>Ajeltake Island</p>
+            <p>P.O. Box 1405</p>
+            <p>Majuro</p>
+            <p>MH 96960</p>
+            <p>Marshall Islands</p>
+          </div>
+        </div>
+        <div class="page-footer__pay">
+          <p class="page-footer__title">
+            <img src="images/footer/BNB.svg" width="20" height="20" alt="BNB icon">
+            <span>$ARTY Contract Address:</span>
+          </p>
+          <p class="page-footer__code">0x617Cab4aAae1f8dfb3eE138698330776a1e1b324</p>
+          <a class="button button--yellow" href="#!">BscScan</a>
+        </div>
+        <ul class="page-footer__socials">
+          <li><a href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#X"></use>
+              </svg>
+            </a></li>
+          <li><a href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Discord"></use>
+              </svg>
+            </a></li>
+          <li class="dropdown">
+            <a class="button dropdown-toggle" type="button" data-bs-toggle="dropdown">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Telegram"></use>
+              </svg>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Global Telegram Group</a></li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/global.png" width="16" height="16" alt="flag icon">
+                  Global Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/german.png" width="16" height="16" alt="flag icon">
+                  German Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/french.png" width="16" height="16" alt="flag icon">
+                  French Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/korean.png" width="16" height="16" alt="flag icon">
+                  Korean Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/chinese.png" width="16" height="16" alt="flag icon">
+                  Chinese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/russian.png" width="16" height="16" alt="flag icon">
+                  Russian Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/italian.png" width="16" height="16" alt="flag icon">
+                  Italian Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/japanese.png" width="16" height="16" alt="flag icon">
+                  Japanese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/portuguese.png" width="16" height="16" alt="flag icon">
+                  <img src="images/flags/brazilian.png" width="16" height="16" alt="flag icon">
+                  Portuguese and Brazilian Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/turkish.png" width="16" height="16" alt="flag icon">
+                  Turkish Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/vietnamese.png" width="16" height="16" alt="flag icon">
+                  Vietnamese Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/spanish.png" width="16" height="16" alt="flag icon">
+                  Spanish Telegram Channel
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="#">
+                  <img src="images/flags/arabic.png" width="16" height="16" alt="flag icon">
+                  Arabic Telegram Channel
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Instagram"></use>
+              </svg>
+            </a></li>
+          <li><a href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Facebook"></use>
+              </svg>
+            </a></li>
+          <li><a href="#!">
+              <svg viewBox="0 0 20 20" width="20" height="20">
+                <use href="images/sprite.svg#Youtube"></use>
+              </svg>
+            </a></li>
+        </ul>
+        <p class="page-footer__copyright hide-mobile">Copyright © 2024 Artyfact Ltd. All rights reserved</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

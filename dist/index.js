@@ -108,6 +108,26 @@ var hoverVideo = function hoverVideo() {
     });
   }
 };
+;// CONCATENATED MODULE: ./src/scripts/modules/profileTabs.js
+var profileTabs = function profileTabs() {
+  var tabPanel = document.querySelector('.profile__header');
+  var tabs = document.querySelectorAll('.profile__header-tab');
+  var tabContent = document.querySelectorAll('.profile__tab');
+  tabPanel.addEventListener('click', function (e) {
+    if (e.target.closest('.profile__header-tab')) {
+      var tabBtn = e.target.closest('.profile__header-tab');
+      tabs.forEach(function (tab, index) {
+        if (tab === tabBtn) {
+          tab.classList.add('active');
+          tabContent[index].classList.add('active');
+        } else {
+          tab.classList.remove('active');
+          tabContent[index].classList.remove('active');
+        }
+      });
+    }
+  });
+};
 ;// CONCATENATED MODULE: ./src/scripts/modules/carousels.js
 var carousels = function carousels() {
   var owlRight = $('.carousels__direction--right');
@@ -3907,9 +3927,11 @@ var featuresSwiper = function featuresSwiper() {
 
 
 
+
 filter();
 search();
 hoverVideo();
+profileTabs();
 if (document.querySelector('.page-home')) {
   carousels();
   featuresSwiper();
