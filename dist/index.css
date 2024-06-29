@@ -8568,4 +8568,110 @@ pre {
   padding: 15px 0;
 }
 
+.recovery {
+  margin-bottom: 156px;
+}
+@media (min-width: 1440px) {
+  .recovery {
+    margin-bottom: 0;
+  }
+}
+
+.recovery__desc {
+  margin-bottom: 24px;
+}
+@media (min-width: 720px) {
+  .recovery__desc {
+    margin-bottom: 32px;
+  }
+}
+
+.recovery__list,
+.recovery__list-selected {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 8px;
+}
+.recovery__list li,
+.recovery__list-selected li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+  min-height: 40px;
+  padding: 8px 20px;
+  text-align: center;
+  font-variant-numeric: ordinal;
+  -webkit-font-feature-settings: "ss01" on, "salt" on, "ss08" on, "ss06" on, "ss03" on, "ss05" on, "ss04" on, "ss09" on, "clig" off, "liga" off, "ordn";
+          font-feature-settings: "ss01" on, "salt" on, "ss08" on, "ss06" on, "ss03" on, "ss05" on, "ss04" on, "ss09" on, "clig" off, "liga" off, "ordn";
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #9A9A9A;
+  border-radius: 24px;
+  background: #0D0D0D;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  cursor: pointer;
+}
+@media (min-width: 720px) {
+  .recovery__list li,
+  .recovery__list-selected li {
+    min-height: auto;
+    font-size: 14px;
+  }
+}
+
+.recovery__list {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 28px;
+}
+@media (min-width: 720px) {
+  .recovery__list {
+    margin-bottom: 32px;
+  }
+}
+
+.recovery__back {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.recovery__list-selected {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  min-height: 120px;
+  margin-bottom: 32px;
+  padding: 16px 16px 16px 20px;
+  border-radius: 20px;
+  background: rgba(23, 23, 23, 0.5);
+  background: var(--dark-grey-50, rgba(23, 23, 23, 0.5));
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+.recovery__list-selected li::after {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url(images/Close.svg) no-repeat;
+}
+
 /*# sourceMappingURL=index.css.map*/

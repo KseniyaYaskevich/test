@@ -1,0 +1,88 @@
+.recovery{
+  margin-bottom: 156px;
+  @media(width>=$desktop-width) {
+    margin-bottom: 0;
+  }
+}
+.recovery__desc {
+  margin-bottom: 24px;
+
+  @media(width>=$tablet-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.recovery__list,
+.recovery__list-selected {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  li {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+
+    min-height: 40px;
+    padding: 8px 20px;
+
+    text-align: center;
+    font-variant-numeric: ordinal;
+    font-feature-settings: 'ss01' on, 'salt' on, 'ss08' on, 'ss06' on, 'ss03' on, 'ss05' on, 'ss04' on, 'ss09' on, 'clig' off, 'liga' off;
+    font-family: $font-family--petch;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: $color-grey--light;
+
+    border-radius: 24px;
+    background: #0D0D0D;
+
+    backdrop-filter: blur(20px);
+    cursor: pointer;
+
+    @media(width>=$tablet-width) {
+      min-height: auto;
+      font-size: 14px;
+    }
+  }
+}
+
+
+.recovery__list {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 28px;
+
+  @media(width>=$tablet-width) {
+    margin-bottom: 32px;
+  }
+}
+
+.recovery__back {
+  justify-content: center;
+}
+
+.recovery__list-selected {
+  align-items: flex-start;
+
+  min-height: 120px;
+  margin-bottom: 32px;
+  padding: 16px 16px 16px 20px;
+
+  border-radius: 20px;
+  background: var(--dark-grey-50, rgba(23, 23, 23, 0.50));
+  backdrop-filter: blur(15px);
+
+  li {
+    &::after {
+      content: "";
+      width: 16px;
+      height: 16px;
+      background: url("~images/recovery/Close.svg") no-repeat;
+    }
+  }
+}
