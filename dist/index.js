@@ -130,6 +130,25 @@ var profileTabs = function profileTabs() {
     });
   }
 };
+;// CONCATENATED MODULE: ./src/scripts/modules/userNavMenu.js
+var userNavMenu = function userNavMenu() {
+  var userMenu = document.querySelector('.main-nav__user');
+  var button = document.querySelector('.main-nav__user-button');
+  var buttonClose = document.querySelector('.main-nav__user-close');
+  var buttonCopy = document.querySelector('.main-nav__copy-button');
+  var copyText = document.querySelector('.main-nav__copy-text');
+  if (userMenu) {
+    button.addEventListener('click', function () {
+      userMenu.classList.toggle('active');
+    });
+    buttonClose.addEventListener('click', function () {
+      userMenu.classList.remove('active');
+    });
+    buttonCopy.addEventListener('click', function () {
+      navigator.clipboard.writeText(copyText.innerText);
+    });
+  }
+};
 ;// CONCATENATED MODULE: ./src/scripts/modules/carousels.js
 var carousels = function carousels() {
   var owlRight = $('.carousels__direction--right');
@@ -3930,10 +3949,12 @@ var featuresSwiper = function featuresSwiper() {
 
 
 
+
 filter();
 search();
 hoverVideo();
 profileTabs();
+userNavMenu();
 if (document.querySelector('.page-home')) {
   carousels();
   featuresSwiper();

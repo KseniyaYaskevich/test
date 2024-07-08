@@ -1,0 +1,276 @@
+.main-nav__user {
+  display: flex;
+
+  &.active {
+    .main-nav__user-content {
+      display: flex;
+    }
+  }
+}
+
+.main-nav__user-button {
+  width: 40px;
+  height: 40px;
+
+  img {
+    max-height: 100%;
+
+    object-fit: cover;
+    object-position: center top;
+
+    border-radius: 40px;
+    border: 1px solid transparent;
+    transition: border-color .2s ease-out;
+
+    &:hover {
+      border-color: $color-yellow;
+    }
+  }
+}
+
+.main-nav__user-content {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 200;
+  
+  max-width: 365px;
+  width: 100%;
+  margin: 0 auto;
+  display: none;
+
+  padding: 12px 12px 0px;
+
+  flex-direction: column;
+
+
+  border-radius: 16px;
+  background:  rgba(23, 23, 23, 0.50);
+  backdrop-filter: blur(23px);
+
+  @media(width>=$desktop-width) {
+    left: calc(100% + 8px);
+    right: auto;
+    min-width: 286px;
+  }
+}
+
+.main-nav__user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 8px;
+
+  border-radius: 12px;
+  background: rgba(61, 61, 61, 0.25);
+
+  @media(width>=$desktop-width) {
+    margin-top: 8px;
+  }
+
+  & li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      min-width: 24px;
+    }
+
+    @media(width>=$desktop-width) {
+      justify-content: flex-start;
+      gap: 8px;
+    }
+  }
+
+  li p {
+    @media(width>=$desktop-width) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      span:first-child {
+        order: 1;
+      }
+    }
+  }
+}
+
+.main-nav__user-list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px 8px;
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: -12px;
+    right: -12px;
+    content: "";
+
+    height: 1px;
+    opacity: 0.2;
+    background: #606060;
+
+    @media(width>=$desktop-width) {
+      content: none;
+    }
+  }
+
+  & a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: $color-grey--light;
+
+    & svg {
+      fill: currentColor;
+      transition: fill .2s ease-out;
+    }
+
+    &:hover {
+      & svg {
+        fill: $color-white;
+      }
+    }
+  }
+
+  @media(width>=$desktop-width) {
+    li:last-child {
+      position: relative;
+      padding-top: 12px;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: -20px;
+        right: -20px;
+        content: "";
+
+        height: 1px;
+        opacity: 0.2;
+        background: #606060;
+      }
+    }
+  }
+}
+
+
+.main-nav__user-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 8px 14px;
+
+  & img {
+    height: 40px;
+    min-width: 40px;
+    object-fit: cover;
+    object-position: center top;
+
+    border-radius: 40px;
+    border: 1px solid transparent;
+    transition: border-color .2s ease-out;
+  }
+
+  & a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @media(width>=$desktop-width) {
+      position: relative;
+      width: 100%;
+    }
+
+    &:hover {
+      p span:first-child {
+        color: $color-yellow;
+      }
+
+      img {
+        border-color: $color-yellow;
+      }
+    }
+
+    p span {
+      &:first-child {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        transition: color .2s ease-out;
+
+        svg {
+          fill: transparent;
+          stroke: currentColor;
+
+          transform: rotate(-90deg);
+
+          @media(width>=$desktop-width) {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+          }
+        }
+      }
+
+      &:last-child {
+        color: $color-grey--light;
+      }
+    }
+  }
+
+  @media(width>=$desktop-width) {
+
+    order: -1;
+    padding: 0;
+    margin-bottom: 16px;
+
+  }
+}
+
+.main-nav__user-close {
+  padding: 8px;
+  color: $color-grey--light;
+
+  border-radius: 50px;
+  background: rgba(61, 61, 61, 0.30);
+
+  &:hover {
+    color: $color-yellow;
+
+    transition: color .2s ease-out;
+  }
+
+  svg {
+    stroke: currentColor;
+  }
+
+  @media(width>=$desktop-width) {
+    display: none;
+  }
+}
+
+.main-nav__copy {
+  display: none;
+
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+
+  @media(width>=$desktop-width) {
+    display: flex;
+  }
+}
+
+.main-nav__copy-button {
+  color: $color-yellow;
+}

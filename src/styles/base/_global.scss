@@ -364,3 +364,21 @@ a {
     font-weight: 500;
   }
 }
+
+.small-label {
+  color: #606060;
+  font-variant-numeric: ordinal;
+  font-feature-settings: 'ss01' on, 'salt' on, 'ss08' on, 'ss06' on, 'ss03' on, 'ss05' on, 'ss04' on, 'ss09' on, 'clig' off, 'liga' off;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  font-family: $font-family--petch;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+
+  @media (width >=$desktop-width) {
+    color: $color-grey--light;
+  }
+}
