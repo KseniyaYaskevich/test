@@ -3673,6 +3673,7 @@ a {
   bottom: 0;
   right: 0;
   left: 0;
+  z-index: 200;
   max-width: 365px;
   width: 100%;
   margin: 0 auto;
@@ -3925,9 +3926,6 @@ a {
 
 .main-nav__copy {
   display: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
